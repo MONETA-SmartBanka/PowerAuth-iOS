@@ -1,0 +1,11 @@
+framework module WultraSSLPinning {
+  umbrella header "WultraSSLPinning.h"
+
+  export *
+  module * { export * }
+}
+
+module WultraSSLPinning.Swift {
+    header "WultraSSLPinning-Swift.h"
+    requires objc
+}
