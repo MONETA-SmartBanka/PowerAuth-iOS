@@ -8,8 +8,17 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "PowerAuth",
-            targets: ["PowerAuth2", "PowerAuth2ForExtensions", "PowerAuth2ForWatch",  "WultraSSLPinning"]),
+            name: "PowerAuth2",
+            targets: ["PowerAuth2"]),
+        .library(
+            name: "PowerAuth2ForExtensions",
+            targets: ["PowerAuth2ForExtensions"]),
+        .library(
+            name: "PowerAuth2ForWatch",
+            targets: ["PowerAuth2ForWatch"]),
+        .library(
+            name: "WultraSSLPinning",
+            targets: ["WultraSSLPinning"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
