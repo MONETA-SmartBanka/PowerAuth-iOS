@@ -18,7 +18,7 @@ let package = Package(
             targets: ["PowerAuth2ForWatch"]),
         .library(
             name: "WultraSSLPinning",
-            targets: ["WultraSSLPinning"]),
+            targets: ["WultraSSLPinning", "PowerAuth2"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
