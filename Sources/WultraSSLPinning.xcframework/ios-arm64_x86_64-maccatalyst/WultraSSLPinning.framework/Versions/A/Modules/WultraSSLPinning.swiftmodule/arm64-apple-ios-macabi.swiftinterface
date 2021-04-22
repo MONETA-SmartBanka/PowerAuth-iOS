@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WultraSSLPinning
 import Foundation
 import PowerAuth2
@@ -19,8 +19,8 @@ extension CertStore {
   final public let certStore: WultraSSLPinning.CertStore
   public init(certStore: WultraSSLPinning.CertStore)
   @objc public func validateSsl(for session: Foundation.URLSession, challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public class PowerAuthSecureDataStore : WultraSSLPinning.SecureDataStore {
   public static let defaultKeychainIdentifier: Swift.String
@@ -33,23 +33,21 @@ public class PowerAuthSecureDataStore : WultraSSLPinning.SecureDataStore {
 public struct CertStoreConfiguration {
   public let serviceUrl: Foundation.URL
   public let publicKey: Swift.String
+  public let useChallenge: Swift.Bool
   public let expectedCommonNames: [Swift.String]?
   public let identifier: Swift.String?
-  public let fallbackCertificateData: Foundation.Data?
+  public let fallbackCertificatesData: Foundation.Data?
   public let periodicUpdateInterval: Foundation.TimeInterval
   public let expirationUpdateTreshold: Foundation.TimeInterval
-  public init(serviceUrl: Foundation.URL, publicKey: Swift.String, expectedCommonNames: [Swift.String]? = nil, identifier: Swift.String? = nil, fallbackCertificateData: Foundation.Data? = nil, periodicUpdateInterval: Foundation.TimeInterval = 7*24*60*60, expirationUpdateTreshold: Foundation.TimeInterval = 14*24*60*60)
+  public let sslValidationStrategy: WultraSSLPinning.SSLValidationStrategy
+  public init(serviceUrl: Foundation.URL, publicKey: Swift.String, useChallenge: Swift.Bool = false, expectedCommonNames: [Swift.String]? = nil, identifier: Swift.String? = nil, fallbackCertificatesData: Foundation.Data? = nil, periodicUpdateInterval: Foundation.TimeInterval = 7*24*60*60, expirationUpdateTreshold: Foundation.TimeInterval = 14*24*60*60, sslValidationStrategy: WultraSSLPinning.SSLValidationStrategy = .default)
 }
-public enum Result<T> {
-  case success(T)
-  case failure(Swift.Error)
-  public var isSuccess: Swift.Bool {
-    get
-  }
-  public var isFailure: Swift.Bool {
-    get
-  }
-  public var value: T? {
+public enum SSLValidationStrategy {
+  case `default`
+  case noValidation
+  public static func == (a: WultraSSLPinning.SSLValidationStrategy, b: WultraSSLPinning.SSLValidationStrategy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -68,8 +66,8 @@ public enum Result<T> {
     case errors
     case warnings
     case all
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
@@ -87,10 +85,10 @@ extension CertStore {
     case untrusted
     case empty
     public static func == (a: WultraSSLPinning.CertStore.ValidationResult, b: WultraSSLPinning.CertStore.ValidationResult) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public func validate(commonName: Swift.String, fingerprint: Foundation.Data) -> WultraSSLPinning.CertStore.ValidationResult
   public func validate(commonName: Swift.String, certificateData: Foundation.Data) -> WultraSSLPinning.CertStore.ValidationResult
@@ -101,10 +99,10 @@ extension CertStore {
     case `default`
     case forced
     public static func == (a: WultraSSLPinning.CertStore.UpdateMode, b: WultraSSLPinning.CertStore.UpdateMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public enum UpdateResult {
     case ok
@@ -113,10 +111,10 @@ extension CertStore {
     case invalidData
     case invalidSignature
     public static func == (a: WultraSSLPinning.CertStore.UpdateResult, b: WultraSSLPinning.CertStore.UpdateResult) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public func update(mode: WultraSSLPinning.CertStore.UpdateMode = .default, completionQueue: Dispatch.DispatchQueue = .main, completion: @escaping (WultraSSLPinning.CertStore.UpdateResult, Swift.Error?) -> Swift.Void)
 }
@@ -124,6 +122,7 @@ public protocol CryptoProvider : AnyObject {
   func ecdsaValidateSignatures(signedData: WultraSSLPinning.SignedData, publicKey: WultraSSLPinning.ECPublicKey) -> Swift.Bool
   func importECPublicKey(publicKey: Foundation.Data) -> WultraSSLPinning.ECPublicKey?
   func hashSha256(data: Foundation.Data) -> Foundation.Data
+  func getRandomData(length: Swift.Int) -> Foundation.Data
 }
 public struct SignedData {
   public let data: Foundation.Data
@@ -136,10 +135,13 @@ public class PowerAuthCryptoProvider : WultraSSLPinning.CryptoProvider {
   public func ecdsaValidateSignatures(signedData: WultraSSLPinning.SignedData, publicKey: WultraSSLPinning.ECPublicKey) -> Swift.Bool
   public func importECPublicKey(publicKey: Foundation.Data) -> WultraSSLPinning.ECPublicKey?
   public func hashSha256(data: Foundation.Data) -> Foundation.Data
+  public func getRandomData(length: Swift.Int) -> Foundation.Data
   @objc deinit
 }
 extension PA2ECPublicKey : WultraSSLPinning.ECPublicKey {
 }
+extension WultraSSLPinning.SSLValidationStrategy : Swift.Equatable {}
+extension WultraSSLPinning.SSLValidationStrategy : Swift.Hashable {}
 extension WultraSSLPinning.WultraDebug.VerboseLevel : Swift.Equatable {}
 extension WultraSSLPinning.WultraDebug.VerboseLevel : Swift.Hashable {}
 extension WultraSSLPinning.WultraDebug.VerboseLevel : Swift.RawRepresentable {}

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PA2ErrorConstants.h</key>
 		<data>
-		Nfg4PCsDIPmjNnx+5pdJ/FmoAe8=
+		pGZ6HEzy1DgDRzdmrNp9p5sRHbM=
 		</data>
 		<key>Headers/PA2ExtensionLibrary.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/PowerAuthAuthentication.h</key>
 		<data>
-		o07rFUR3hx/amV9FtPjFLoTD7fU=
+		CIIryQpBo0rh0ydV2ty9rKzUWUI=
 		</data>
 		<key>Headers/PowerAuthConfiguration.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rLwnJ86YWEbeFdJZqeaqGnoZl/g=
+		VXTXlCQeSwETK++3rTtpP+LTsnk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -146,11 +146,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Nfg4PCsDIPmjNnx+5pdJ/FmoAe8=
+			pGZ6HEzy1DgDRzdmrNp9p5sRHbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			hn8iRV5q2Vg8TC3yA1SmwERo1ADEYvgYe3W1NnVAG74=
+			K/FxY2xpp/d22f/rQRyqocBhuj1nF7UqCQgyq5xhOgc=
 			</data>
 		</dict>
 		<key>Headers/PA2ExtensionLibrary.h</key>
@@ -245,11 +245,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o07rFUR3hx/amV9FtPjFLoTD7fU=
+			CIIryQpBo0rh0ydV2ty9rKzUWUI=
 			</data>
 			<key>hash2</key>
 			<data>
-			aYdpoyy4SFSpn0q9hzieVzeL5RIGtouEHZid/iKxuj8=
+			XqR6+Uj5/zHLwDpgRkux3TTJE5daEIhHFOpgqA1fHv0=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthConfiguration.h</key>

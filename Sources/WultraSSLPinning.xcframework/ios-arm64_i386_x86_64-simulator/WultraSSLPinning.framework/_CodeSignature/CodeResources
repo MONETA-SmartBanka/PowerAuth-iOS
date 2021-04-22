@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WultraSSLPinning-Swift.h</key>
 		<data>
-		yua0Po6BE+v5YDhJiOBcZiChy7I=
+		9QIbj1YtPBa3Y9qZNwBxsWNBo90=
 		</data>
 		<key>Headers/WultraSSLPinning.h</key>
 		<data>
@@ -14,79 +14,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/dVYFd8C6WtA90csUnCJtollRGs=
+		70byavvrGSkp1pi82HUZjOI2f/0=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OZph4z7Eh1h9B471euxVNcAIMbU=
+		bVT6fjMo1YoJ3XPYw8v678rJf/s=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2x/dyN8zfXuKcI8SVmythzVEf3E=
+		l5InWnTKmAOc4T/wWKzifCuYn4o=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZiUVWQhwOX2igFmLdlwh0YLG8Bw=
+		E7hTZwB0Tc0OUCm3tXcjpVVAanE=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		OZph4z7Eh1h9B471euxVNcAIMbU=
+		bVT6fjMo1YoJ3XPYw8v678rJf/s=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		2x/dyN8zfXuKcI8SVmythzVEf3E=
+		l5InWnTKmAOc4T/wWKzifCuYn4o=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ZiUVWQhwOX2igFmLdlwh0YLG8Bw=
+		E7hTZwB0Tc0OUCm3tXcjpVVAanE=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uMk7KUznBPJZfZyAcmre0BpAuqA=
+		RlIdQwujAErnt+YFDoYmB6aMtX0=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7jI6JqMymWYgtGJy5b0bCH9TX8A=
+		leaR9Ivtv8usammbcEtYgeMlgRo=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7Tnb1iJdweHJqyosthhLZocYo7c=
+		RT4rWBMZa7fgtP6lgOX7Lak801U=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386.swiftdoc</key>
 		<data>
-		uMk7KUznBPJZfZyAcmre0BpAuqA=
+		RlIdQwujAErnt+YFDoYmB6aMtX0=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386.swiftinterface</key>
 		<data>
-		7jI6JqMymWYgtGJy5b0bCH9TX8A=
+		leaR9Ivtv8usammbcEtYgeMlgRo=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386.swiftmodule</key>
 		<data>
-		7Tnb1iJdweHJqyosthhLZocYo7c=
+		RT4rWBMZa7fgtP6lgOX7Lak801U=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OmqCDA7bxgIo7pZjFTmzdqdltTo=
+		1yqjgUUEoA4vQsLqI12W2Cjw020=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XGsGs051tKqu00udcXX9UJ0PEkY=
+		lqjSjpRjtf9FQN6lICI9rOyb+5w=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oixGENNN5GmOwlLygLTtGYSDlXY=
+		l/LE5rBqLTZII+tD5REiAUWIkzc=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		OmqCDA7bxgIo7pZjFTmzdqdltTo=
+		1yqjgUUEoA4vQsLqI12W2Cjw020=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		XGsGs051tKqu00udcXX9UJ0PEkY=
+		lqjSjpRjtf9FQN6lICI9rOyb+5w=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		oixGENNN5GmOwlLygLTtGYSDlXY=
+		l/LE5rBqLTZII+tD5REiAUWIkzc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yua0Po6BE+v5YDhJiOBcZiChy7I=
+			9QIbj1YtPBa3Y9qZNwBxsWNBo90=
 			</data>
 			<key>hash2</key>
 			<data>
-			0UIQUbJDM5OtP1XEWvuY3HTieUw6qthGAD5bHnSpgGg=
+			DYuB9Axz3RbRlrPudByoysfK4Um0PNOrlSh5/Xo0yVk=
 			</data>
 		</dict>
 		<key>Headers/WultraSSLPinning.h</key>
@@ -121,198 +121,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OZph4z7Eh1h9B471euxVNcAIMbU=
+			bVT6fjMo1YoJ3XPYw8v678rJf/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			3UC5HSWUIREur9p5358bdFPcv9xbjgAE8ZfP8EQbgns=
+			RjtHqzgXDcXG39Lsn83jabKvrmtZMHVLTs2LIG0wrHw=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2x/dyN8zfXuKcI8SVmythzVEf3E=
+			l5InWnTKmAOc4T/wWKzifCuYn4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			a9PHhpIO4v1lRyCVRkG0Bya5P6ab4wq2G15Ez8pWciY=
+			uCS+W0grajyZ1O1Yy3aB+aKEvZm2ZUOnTgOsyuDKYsg=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZiUVWQhwOX2igFmLdlwh0YLG8Bw=
+			E7hTZwB0Tc0OUCm3tXcjpVVAanE=
 			</data>
 			<key>hash2</key>
 			<data>
-			3eD2chREAGoiLaAW7Op3nJ0D9WddgtbkQQIwx6J8H5c=
+			eiTBBtpQnfjglJ3OC1kP9erdS9i/mqme83RJ4rB/ZTA=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OZph4z7Eh1h9B471euxVNcAIMbU=
+			bVT6fjMo1YoJ3XPYw8v678rJf/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			3UC5HSWUIREur9p5358bdFPcv9xbjgAE8ZfP8EQbgns=
+			RjtHqzgXDcXG39Lsn83jabKvrmtZMHVLTs2LIG0wrHw=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2x/dyN8zfXuKcI8SVmythzVEf3E=
+			l5InWnTKmAOc4T/wWKzifCuYn4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			a9PHhpIO4v1lRyCVRkG0Bya5P6ab4wq2G15Ez8pWciY=
+			uCS+W0grajyZ1O1Yy3aB+aKEvZm2ZUOnTgOsyuDKYsg=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZiUVWQhwOX2igFmLdlwh0YLG8Bw=
+			E7hTZwB0Tc0OUCm3tXcjpVVAanE=
 			</data>
 			<key>hash2</key>
 			<data>
-			3eD2chREAGoiLaAW7Op3nJ0D9WddgtbkQQIwx6J8H5c=
+			eiTBBtpQnfjglJ3OC1kP9erdS9i/mqme83RJ4rB/ZTA=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uMk7KUznBPJZfZyAcmre0BpAuqA=
+			RlIdQwujAErnt+YFDoYmB6aMtX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			2JAs/B8HC+2YFxV4WG4dgfCKY9//k4wOPyFbDvG5S6o=
+			tyTnovwJyDUB4sc6hZ46lnqkfJExeZ1m82jNoF1qFc0=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7jI6JqMymWYgtGJy5b0bCH9TX8A=
+			leaR9Ivtv8usammbcEtYgeMlgRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			fSG+w3lbtUaGVa1f/P72lxuX69tQeR+2x4k9OsyRvSw=
+			vayz+MV7qIFDd2oZMmQc5T9WEV/7UoTmeo4DgyWUIn4=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7Tnb1iJdweHJqyosthhLZocYo7c=
+			RT4rWBMZa7fgtP6lgOX7Lak801U=
 			</data>
 			<key>hash2</key>
 			<data>
-			jGUTQ51TR+i6TWiPue0Su6As939SGuSt0LWd419lj5Q=
+			YU0DOqJwW8Jg8DoJkM+r/rqjCIZqqEI631h1gIpovxw=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uMk7KUznBPJZfZyAcmre0BpAuqA=
+			RlIdQwujAErnt+YFDoYmB6aMtX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			2JAs/B8HC+2YFxV4WG4dgfCKY9//k4wOPyFbDvG5S6o=
+			tyTnovwJyDUB4sc6hZ46lnqkfJExeZ1m82jNoF1qFc0=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7jI6JqMymWYgtGJy5b0bCH9TX8A=
+			leaR9Ivtv8usammbcEtYgeMlgRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			fSG+w3lbtUaGVa1f/P72lxuX69tQeR+2x4k9OsyRvSw=
+			vayz+MV7qIFDd2oZMmQc5T9WEV/7UoTmeo4DgyWUIn4=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7Tnb1iJdweHJqyosthhLZocYo7c=
+			RT4rWBMZa7fgtP6lgOX7Lak801U=
 			</data>
 			<key>hash2</key>
 			<data>
-			jGUTQ51TR+i6TWiPue0Su6As939SGuSt0LWd419lj5Q=
+			YU0DOqJwW8Jg8DoJkM+r/rqjCIZqqEI631h1gIpovxw=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OmqCDA7bxgIo7pZjFTmzdqdltTo=
+			1yqjgUUEoA4vQsLqI12W2Cjw020=
 			</data>
 			<key>hash2</key>
 			<data>
-			3dxeLRS3e/w1In7tezxNmTW/aFKkj83JxlWArQ+cI04=
+			XOc1exSM38i+VoyeFPbAPPzMIy05kUzbfpLVyKkdUZA=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XGsGs051tKqu00udcXX9UJ0PEkY=
+			lqjSjpRjtf9FQN6lICI9rOyb+5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			nmcKFHKmVFtVf970G2geoWhjxqk2qbEu954s7IdH5YM=
+			ky4CGX0Ef+GP7vI/vLJLV/TWlqRzd+VIqIZ76+3DVKg=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oixGENNN5GmOwlLygLTtGYSDlXY=
+			l/LE5rBqLTZII+tD5REiAUWIkzc=
 			</data>
 			<key>hash2</key>
 			<data>
-			5aPPMev5rmERCRpq47gpe46YsORmv+edl00/0o/qUFU=
+			MbgWCzfWWbQOOHz5C7+noFmbMifDl9fto/ezI8uv/4w=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OmqCDA7bxgIo7pZjFTmzdqdltTo=
+			1yqjgUUEoA4vQsLqI12W2Cjw020=
 			</data>
 			<key>hash2</key>
 			<data>
-			3dxeLRS3e/w1In7tezxNmTW/aFKkj83JxlWArQ+cI04=
+			XOc1exSM38i+VoyeFPbAPPzMIy05kUzbfpLVyKkdUZA=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XGsGs051tKqu00udcXX9UJ0PEkY=
+			lqjSjpRjtf9FQN6lICI9rOyb+5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			nmcKFHKmVFtVf970G2geoWhjxqk2qbEu954s7IdH5YM=
+			ky4CGX0Ef+GP7vI/vLJLV/TWlqRzd+VIqIZ76+3DVKg=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oixGENNN5GmOwlLygLTtGYSDlXY=
+			l/LE5rBqLTZII+tD5REiAUWIkzc=
 			</data>
 			<key>hash2</key>
 			<data>
-			5aPPMev5rmERCRpq47gpe46YsORmv+edl00/0o/qUFU=
+			MbgWCzfWWbQOOHz5C7+noFmbMifDl9fto/ezI8uv/4w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
