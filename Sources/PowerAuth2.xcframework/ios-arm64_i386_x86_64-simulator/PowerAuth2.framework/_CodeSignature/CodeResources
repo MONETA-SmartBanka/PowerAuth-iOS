@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/PA2System.h</key>
 		<data>
-		u/mQNYblNAduagt860tF5pfeOE8=
+		bVYB3797IUAhOXS/6+6x1n39glM=
 		</data>
 		<key>Headers/PA2Types.h</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Headers/PowerAuthSDK.h</key>
 		<data>
-		TS8IdmrdwcgeYfKEaB23wT6LY5Q=
+		YcXUgtJrrLYgxJgtI6nxZwA/AJ8=
 		</data>
 		<key>Headers/PowerAuthToken+WatchSupport.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JVMpBhpPimxrOoC9kfbP38y0Rd8=
+		zhffc1B28D3pBQ3CNj7Qcc+0PfQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>PrivateHeaders/PA2WeakArray.h</key>
 		<data>
-		Qm2/f3u58+YNg53m0+EXKX3AHgY=
+		HUoIoenIlVmJWr5zZQSU5eAihoI=
 		</data>
 		<key>PrivateHeaders/PowerAuthSDK+Private.h</key>
 		<data>
@@ -645,11 +645,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u/mQNYblNAduagt860tF5pfeOE8=
+			bVYB3797IUAhOXS/6+6x1n39glM=
 			</data>
 			<key>hash2</key>
 			<data>
-			LMaBr0ZMnCBXWG4t5JRmuJ3LseBRnpOAbctkYUzAIuI=
+			kPaJGmEeEKl4TsfZcDNZnBcPNyT3thDVIJOUhRuzfUk=
 			</data>
 		</dict>
 		<key>Headers/PA2Types.h</key>
@@ -722,11 +722,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TS8IdmrdwcgeYfKEaB23wT6LY5Q=
+			YcXUgtJrrLYgxJgtI6nxZwA/AJ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			jh2XKEYQVfIIzxDmPpwdhu5KP4RNtBy/C20AOteCZ+k=
+			340+yrv30dvXXwhDRpE75R1PC5/BAqhDW20U3P1KLyw=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthToken+WatchSupport.h</key>
@@ -1283,11 +1283,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qm2/f3u58+YNg53m0+EXKX3AHgY=
+			HUoIoenIlVmJWr5zZQSU5eAihoI=
 			</data>
 			<key>hash2</key>
 			<data>
-			G1UYRp9aIkwcrIKilhsySMg+E/HiF/UveuCsHXEI458=
+			c6QzaMuU2sHE4isUortaGkkYSbMNutApmIAkY3BPps0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/PowerAuthSDK+Private.h</key>
