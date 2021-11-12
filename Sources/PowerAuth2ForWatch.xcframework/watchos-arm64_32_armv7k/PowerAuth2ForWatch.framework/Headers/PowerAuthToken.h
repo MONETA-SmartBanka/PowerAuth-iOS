@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Wultra s.r.o.
+ * Copyright 2021 Wultra s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,13 @@
  * limitations under the License.
  */
 
-#import "PA2Macros.h"
+// PA2_SHARED_SOURCE PowerAuth2ForWatch .
+// PA2_SHARED_SOURCE PowerAuth2ForExtensions .
+
+#import <PowerAuth2ForWatch/PowerAuthMacros.h>
 
 // Forward declarations...
-@class PA2AuthorizationHttpHeader;
+@class PowerAuthAuthorizationHttpHeader;
 @class PowerAuthAuthentication;
 @protocol PowerAuthTokenStore;
 
@@ -59,7 +62,7 @@
 /**
  Returns a new token-based authorization header or nil, if it's not possible to generate the header.
  */
-- (nullable PA2AuthorizationHttpHeader*) generateHeader;
+- (nullable PowerAuthAuthorizationHttpHeader*) generateHeader;
 
 /**
  Returns YES if both token objects are equal.

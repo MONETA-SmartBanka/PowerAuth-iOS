@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Wultra s.r.o.
+ * Copyright 2021 Wultra s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,31 +22,18 @@ FOUNDATION_EXPORT double PowerAuth2VersionNumber;
 //! Project version string for PowerAuth2.
 FOUNDATION_EXPORT const unsigned char PowerAuth2VersionString[];
 
-#import "PowerAuthSDK.h"
+#import <PowerAuth2/PowerAuthSDK.h>
+#import <PowerAuth2/PowerAuthActivationCode.h>
+#import <PowerAuth2/PowerAuthErrorConstants.h>
+#import <PowerAuth2/PowerAuthKeychain.h>
 
-#import "PA2Log.h"
-#import "PA2Macros.h"
-#import "PA2System.h"
-#import "PA2Keychain.h"
+#import <PowerAuth2/PowerAuthRestApiError.h>
+#import <PowerAuth2/PowerAuthRestApiErrorResponse.h>
+#import <PowerAuth2/PowerAuthClientSslNoValidationStrategy.h>
+#import <PowerAuth2/PowerAuthBasicHttpAuthenticationRequestInterceptor.h>
+#import <PowerAuth2/PowerAuthCustomHeaderRequestInterceptor.h>
 
-#import "PA2OperationTask.h"
-#import "PA2RestResponseStatus.h"
-#import "PA2ErrorResponse.h"
-#import "PA2ActivationResult.h"
-#import "PA2ActivationRecoveryData.h"
-#import "PA2ClientConfiguration.h"
-#import "PA2ClientSslValidationStrategy.h"
-#import "PA2ClientSslNoValidationStrategy.h"
-#import "PA2HttpRequestInterceptor.h"
-#import "PA2BasicHttpAuthenticationRequestInterceptor.h"
-#import "PA2CustomHeaderRequestInterceptor.h"
+#import <PowerAuth2/PowerAuthLog.h>
+#import <PowerAuth2/PowerAuthSystem.h>
 
-#import "PA2ErrorConstants.h"
-#import "PA2Password.h"
-#import "PA2OtpUtil.h"
-#import "PA2ECIESEncryptor.h"
-#import "PA2CryptoUtils.h"
-
-#if defined(PA2_WATCH_SUPPORT)
-#import "PA2WCSessionManager.h"
-#endif
+#import <PowerAuth2/PowerAuthWCSessionManager.h>

@@ -4,326 +4,236 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/PA2AuthorizationHttpHeader.h</key>
+		<key>Headers/PowerAuth2ForExtensions.h</key>
 		<data>
-		i8/tVcbZVh4JbBKWkkWhVBZuj1w=
-		</data>
-		<key>Headers/PA2ErrorConstants.h</key>
-		<data>
-		pGZ6HEzy1DgDRzdmrNp9p5sRHbM=
-		</data>
-		<key>Headers/PA2ExtensionLibrary.h</key>
-		<data>
-		GUdmcRgOwAzXY7nQpy9c7/+CrPI=
-		</data>
-		<key>Headers/PA2Keychain.h</key>
-		<data>
-		bPs/ybgwAZf2VvWRC9Gb4dMW6W8=
-		</data>
-		<key>Headers/PA2KeychainConfiguration.h</key>
-		<data>
-		EspZMXtMHhYD64GJtEporaWUomc=
-		</data>
-		<key>Headers/PA2Log.h</key>
-		<data>
-		r/XUt2Bn+r4TzKxPOfmiIDdZ5G4=
-		</data>
-		<key>Headers/PA2Macros.h</key>
-		<data>
-		WMyKuvW1Qg6sOwsyeE+vpjBoD/w=
-		</data>
-		<key>Headers/PA2SessionStatusProvider.h</key>
-		<data>
-		p3AzCjY85T1o0JvkYdqnr6DyDz0=
-		</data>
-		<key>Headers/PowerAuth2ForExtensions-umbrella.h</key>
-		<data>
-		ogqmeSJinQq7cWFq7goX0D7L19A=
+		Z58hTiseuEBXa2aoiIjHttHKJV4=
 		</data>
 		<key>Headers/PowerAuthAuthentication.h</key>
 		<data>
-		CIIryQpBo0rh0ydV2ty9rKzUWUI=
+		8V6pAhjARMDlOkwgtKMgzzxvulg=
+		</data>
+		<key>Headers/PowerAuthAuthorizationHttpHeader.h</key>
+		<data>
+		Rqv6833P1ZonkvgBsI2lwuA0mJU=
 		</data>
 		<key>Headers/PowerAuthConfiguration.h</key>
 		<data>
-		FT3tdej5gklNPtpLipD5JkDFXXw=
+		4Ch6zwWA8kUBwVRbMpx9YpDgDWk=
+		</data>
+		<key>Headers/PowerAuthDeprecated.h</key>
+		<data>
+		Fre41HYdygoLYZJhaXbYWJgK1ns=
+		</data>
+		<key>Headers/PowerAuthErrorConstants.h</key>
+		<data>
+		emt9NaeCrAiBXuip6hKBW6gGIjE=
 		</data>
 		<key>Headers/PowerAuthExtensionSDK.h</key>
 		<data>
-		b0TpbAN3Xcy1JRRgl8Ba9EOKW4Q=
+		GWT+TOpXDPqmz7oboib1NAqkHt0=
+		</data>
+		<key>Headers/PowerAuthKeychain.h</key>
+		<data>
+		dWBU6AytrHihtvHh27DBYc+Oc0M=
+		</data>
+		<key>Headers/PowerAuthKeychainConfiguration.h</key>
+		<data>
+		iPtJDgaYLJE6Wax/kLDq7hZtCO0=
+		</data>
+		<key>Headers/PowerAuthLog.h</key>
+		<data>
+		MadwrYytCKj0Za870CqTOivPtEk=
+		</data>
+		<key>Headers/PowerAuthMacros.h</key>
+		<data>
+		3FmQsqd2/fIMCgRRdaHAfyyyEHs=
+		</data>
+		<key>Headers/PowerAuthSessionStatusProvider.h</key>
+		<data>
+		7oJYoI8XHdJsH+O8ojkPPzpMBWA=
+		</data>
+		<key>Headers/PowerAuthSystem.h</key>
+		<data>
+		PLGWIL6c3pAGqPW0He2C3yZQRNA=
 		</data>
 		<key>Headers/PowerAuthToken.h</key>
 		<data>
-		HChk5Ji4fE5bXQLdhzGoGaUyRGg=
+		/caUwuWCPq2HNTDNbrjHOebp7d4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z4f0rD6/oOn8StpBTYnOpgtjKKM=
+		Zi9MEn9Xzkn0G7bR2w8GELDhxio=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		qhRmqs2QTVhS/X8GZDwh76MFsYo=
-		</data>
-		<key>PrivateHeaders/PA2PrivateCrypto.h</key>
-		<data>
-		S1C71BSTXtaO0emAW++6L6nK/qQ=
-		</data>
-		<key>PrivateHeaders/PA2PrivateMacros.h</key>
-		<data>
-		u1KuEgX28LKUnSE8u7mli0ykdaQ=
-		</data>
-		<key>PrivateHeaders/PA2PrivateRemoteTokenProvider.h</key>
-		<data>
-		v54M7qVLYJJFYMhTzHs9CutqW1U=
-		</data>
-		<key>PrivateHeaders/PA2PrivateTokenData.h</key>
-		<data>
-		6vUq1XKtTqROmVfBA0PB5mdJ2I8=
-		</data>
-		<key>PrivateHeaders/PA2PrivateTokenInterfaces.h</key>
-		<data>
-		h68pzVLva9da88gXw9Fmj0dR1bQ=
-		</data>
-		<key>PrivateHeaders/PA2PrivateTokenKeychainStore.h</key>
-		<data>
-		cGgVn+73kb8xVzoHpe4OxlNQBQk=
-		</data>
-		<key>PrivateHeaders/PA2SessionStatusDataReader.h</key>
-		<data>
-		eEbV8Ju6jYk5F77cPKlx+2QnYYM=
+		0MjAN4SMqj1EOr5uL3U07bChsA4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/PA2AuthorizationHttpHeader.h</key>
+		<key>Headers/PowerAuth2ForExtensions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i8/tVcbZVh4JbBKWkkWhVBZuj1w=
+			Z58hTiseuEBXa2aoiIjHttHKJV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			s0DB4QCu19+KkDAkYTyEQv17cjtI3qbw1HOsk0M2h30=
-			</data>
-		</dict>
-		<key>Headers/PA2ErrorConstants.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pGZ6HEzy1DgDRzdmrNp9p5sRHbM=
-			</data>
-			<key>hash2</key>
-			<data>
-			K/FxY2xpp/d22f/rQRyqocBhuj1nF7UqCQgyq5xhOgc=
-			</data>
-		</dict>
-		<key>Headers/PA2ExtensionLibrary.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GUdmcRgOwAzXY7nQpy9c7/+CrPI=
-			</data>
-			<key>hash2</key>
-			<data>
-			9Dhbq4QFDTWwvvDdlou7zeTtJUIAsFs0gGCvFzihmIA=
-			</data>
-		</dict>
-		<key>Headers/PA2Keychain.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bPs/ybgwAZf2VvWRC9Gb4dMW6W8=
-			</data>
-			<key>hash2</key>
-			<data>
-			tDarDWm6ZR9uLbHyS2nhRhjRlmeFqPQsTZWOnvNmaPk=
-			</data>
-		</dict>
-		<key>Headers/PA2KeychainConfiguration.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EspZMXtMHhYD64GJtEporaWUomc=
-			</data>
-			<key>hash2</key>
-			<data>
-			T5F59rhHTcpdb8wNTuO/oIMiEje48i2iS9VNJX32r6o=
-			</data>
-		</dict>
-		<key>Headers/PA2Log.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r/XUt2Bn+r4TzKxPOfmiIDdZ5G4=
-			</data>
-			<key>hash2</key>
-			<data>
-			ah+71EBpa9FdawVLac0TyOnXWu3AVGdYM19QmJVZ+Gc=
-			</data>
-		</dict>
-		<key>Headers/PA2Macros.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WMyKuvW1Qg6sOwsyeE+vpjBoD/w=
-			</data>
-			<key>hash2</key>
-			<data>
-			nFm+V71X+cA1IEUHk8fUNniznT0JVwquGHnFHFN0H3A=
-			</data>
-		</dict>
-		<key>Headers/PA2SessionStatusProvider.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			p3AzCjY85T1o0JvkYdqnr6DyDz0=
-			</data>
-			<key>hash2</key>
-			<data>
-			IKZlYqF3Sxu7OJmccNM7mk9wDZRr90a0jALT37nLEwg=
-			</data>
-		</dict>
-		<key>Headers/PowerAuth2ForExtensions-umbrella.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ogqmeSJinQq7cWFq7goX0D7L19A=
-			</data>
-			<key>hash2</key>
-			<data>
-			E0hhpbB3ohrGop/bk/DBsKXiBhOoK3yD/xaku2d92GA=
+			/uHIdZVk7W80VPc+tyEyXNKsupLuK4PEZitqXHvED1A=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthAuthentication.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CIIryQpBo0rh0ydV2ty9rKzUWUI=
+			8V6pAhjARMDlOkwgtKMgzzxvulg=
 			</data>
 			<key>hash2</key>
 			<data>
-			XqR6+Uj5/zHLwDpgRkux3TTJE5daEIhHFOpgqA1fHv0=
+			r3PU0+79/Tekj5smEk0lgeObteuGc0MMrdL+a98+3bM=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthAuthorizationHttpHeader.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rqv6833P1ZonkvgBsI2lwuA0mJU=
+			</data>
+			<key>hash2</key>
+			<data>
+			mhnElizawX3GtimlDuMxP3h6bKpikUoJ3xpQ+Sf9Axw=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthConfiguration.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FT3tdej5gklNPtpLipD5JkDFXXw=
+			4Ch6zwWA8kUBwVRbMpx9YpDgDWk=
 			</data>
 			<key>hash2</key>
 			<data>
-			tDx9Je2yPJLz8wen4b50sZGUaEfJAa9ItSWrbshivO0=
+			kRtWGan98WcX9rDl8jl90vWUvfot6gzLYixE/or6KJE=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthDeprecated.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Fre41HYdygoLYZJhaXbYWJgK1ns=
+			</data>
+			<key>hash2</key>
+			<data>
+			0elBPDFT1CXS4AdGfM7MbxR8AqbvkgYQquUDZ2wbtx8=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthErrorConstants.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			emt9NaeCrAiBXuip6hKBW6gGIjE=
+			</data>
+			<key>hash2</key>
+			<data>
+			/+owic7SVaHoob4zDYst0484sDD6SDmL1dicN2/06jk=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthExtensionSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b0TpbAN3Xcy1JRRgl8Ba9EOKW4Q=
+			GWT+TOpXDPqmz7oboib1NAqkHt0=
 			</data>
 			<key>hash2</key>
 			<data>
-			mZDEdtATFvQewYSMW4cT0u43rxdHCZNJe8eqFonM9hA=
+			6GpGwwlWXRW93sWEtQg29FYY7Mf6FMEL7dPexrlvElc=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthKeychain.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dWBU6AytrHihtvHh27DBYc+Oc0M=
+			</data>
+			<key>hash2</key>
+			<data>
+			QBrAaANEBaJbrBoFQpBq5BCVhD3fHafFDpLN94GhM2Q=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthKeychainConfiguration.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iPtJDgaYLJE6Wax/kLDq7hZtCO0=
+			</data>
+			<key>hash2</key>
+			<data>
+			egKq928fpDLRVu0hRWmmS64yWPlHGH7qWYdTkhmOM5U=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthLog.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MadwrYytCKj0Za870CqTOivPtEk=
+			</data>
+			<key>hash2</key>
+			<data>
+			1GfeQJxxsL9KpgjtOte9K1hFyAQLzvkvQMOp30h87xU=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthMacros.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3FmQsqd2/fIMCgRRdaHAfyyyEHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			sjP+9WAwTSyxjDnKGe8x7BdMvmQWvf6eZ/ScILJKDSo=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthSessionStatusProvider.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7oJYoI8XHdJsH+O8ojkPPzpMBWA=
+			</data>
+			<key>hash2</key>
+			<data>
+			J61c3M8DXPEHf4aICxquSPjDC9lodzIdCd6u1t1tAnU=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthSystem.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PLGWIL6c3pAGqPW0He2C3yZQRNA=
+			</data>
+			<key>hash2</key>
+			<data>
+			oDaGle43bHneQ60TpB8LMsdJYAa+j2FuF/99qbNyd/Q=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthToken.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HChk5Ji4fE5bXQLdhzGoGaUyRGg=
+			/caUwuWCPq2HNTDNbrjHOebp7d4=
 			</data>
 			<key>hash2</key>
 			<data>
-			js9NYebfy28xgpHLLqsWa5GpY4eBXOU0Sdq99ldmdrw=
+			RGL4W9dYEPqgSLOM9nIEQ/bnHldLx9haSWOeAD/MLYA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qhRmqs2QTVhS/X8GZDwh76MFsYo=
+			0MjAN4SMqj1EOr5uL3U07bChsA4=
 			</data>
 			<key>hash2</key>
 			<data>
-			d6xr2eIhl/lY44oftz9I7gajvn/q+pYyURogor3VBLs=
-			</data>
-		</dict>
-		<key>PrivateHeaders/PA2PrivateCrypto.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			S1C71BSTXtaO0emAW++6L6nK/qQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			bd8TG3ikYENa6RsBY/lLXS2pJKJ92nBz/e0AKp7Fi+8=
-			</data>
-		</dict>
-		<key>PrivateHeaders/PA2PrivateMacros.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			u1KuEgX28LKUnSE8u7mli0ykdaQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			DqkyX0H5u4qBwkWcjVlz64krdMSH1Qx3CuPY3shW5h8=
-			</data>
-		</dict>
-		<key>PrivateHeaders/PA2PrivateRemoteTokenProvider.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v54M7qVLYJJFYMhTzHs9CutqW1U=
-			</data>
-			<key>hash2</key>
-			<data>
-			f7G+ty2HB3k+fSW2u6v5mPpGmoIRTgbIdolcR3xyMek=
-			</data>
-		</dict>
-		<key>PrivateHeaders/PA2PrivateTokenData.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6vUq1XKtTqROmVfBA0PB5mdJ2I8=
-			</data>
-			<key>hash2</key>
-			<data>
-			qJqPpQFsQawFSxiqzm0YqpHpCMSfWxCYUaxDsqsYA84=
-			</data>
-		</dict>
-		<key>PrivateHeaders/PA2PrivateTokenInterfaces.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h68pzVLva9da88gXw9Fmj0dR1bQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			xUfS7iKqagw7PvzD1A+NXYBxkA1B8yRTyJ6Bp+n9e+I=
-			</data>
-		</dict>
-		<key>PrivateHeaders/PA2PrivateTokenKeychainStore.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cGgVn+73kb8xVzoHpe4OxlNQBQk=
-			</data>
-			<key>hash2</key>
-			<data>
-			jXD0ATUfRRreiU7nbeN+T9iZ70eAZU3JUMWywJ30tDs=
-			</data>
-		</dict>
-		<key>PrivateHeaders/PA2SessionStatusDataReader.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eEbV8Ju6jYk5F77cPKlx+2QnYYM=
-			</data>
-			<key>hash2</key>
-			<data>
-			uyDrST0W2jHthyL8VOW3aGAHrVAmkWjysQHfP6ktfhs=
+			oRhcPXX0nj6pJ7p+NUV/m7AoItwZzCtVUuxO0NmbodU=
 			</data>
 		</dict>
 	</dict>

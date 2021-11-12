@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 Wultra s.r.o.
+ * Copyright 2021 Wultra s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,24 +14,28 @@
  * limitations under the License.
  */
 
-#import "PowerAuthActivation.h"
-#import "PowerAuthAuthentication.h"
-#import "PowerAuthConfiguration.h"
-#import "PowerAuthToken.h"
-#if defined(PA2_WATCH_SUPPORT)
-#import "PowerAuthToken+WatchSupport.h"
-#endif
+#import <PowerAuth2/PowerAuthActivation.h>
+#import <PowerAuth2/PowerAuthActivationResult.h>
+#import <PowerAuth2/PowerAuthActivationStatus.h>
+#import <PowerAuth2/PowerAuthActivationRecoveryData.h>
+#import <PowerAuth2/PowerAuthAuthentication.h>
+#import <PowerAuth2/PowerAuthConfiguration.h>
+#import <PowerAuth2/PowerAuthClientConfiguration.h>
+#import <PowerAuth2/PowerAuthKeychainConfiguration.h>
+#import <PowerAuth2/PowerAuthToken.h>
+#import <PowerAuth2/PowerAuthToken+WatchSupport.h>
+#import <PowerAuth2/PowerAuthAuthorizationHttpHeader.h>
+#import <PowerAuth2/PowerAuthSessionStatusProvider.h>
+#import <PowerAuth2/PowerAuthOperationTask.h>
+// Deprecated
+#import <PowerAuth2/PowerAuthDeprecated.h>
 
-#import "PA2Session.h"
-#import "PA2ActivationResult.h"
-#import "PA2OperationTask.h"
-#import "PA2AuthorizationHttpHeader.h"
+// Core classes
+@class PowerAuthCoreSession, PowerAuthCoreEciesEncryptor;
 
-@class PA2ClientConfiguration, PA2KeychainConfiguration;
+@interface PowerAuthSDK : NSObject<PowerAuthSessionStatusProvider>
 
-@interface PowerAuthSDK : NSObject<PA2SessionStatusProvider>
-
-/** Reference to the low-level PA2Session class.
+/** Reference to the low-level PowerAuthCoreSession class.
  
  WARNING
  
@@ -41,7 +45,7 @@
  protective mechanisms for keeping the session state actually consistent in the functional (not low level) sense. As a result, you
  may break your activation state (for example, by changing password from incorrect value to some other value).
  */
-@property (nonatomic, strong, nonnull, readonly) PA2Session *session;
+@property (nonatomic, strong, nonnull, readonly) PowerAuthCoreSession *session;
 
 /**
  Instance of configuration, provided during the object initialization.
@@ -51,23 +55,23 @@
  */
 @property (nonatomic, strong, nonnull, readonly) PowerAuthConfiguration *configuration;
 /**
- Instance of `PA2ClientConfiguration` object, provided during the object initialization.
+ Instance of `PowerAuthClientConfiguration` object, provided during the object initialization.
  
  Note that the copy of internal object is always returned and thus making changes to the returned object
  doesn't affect this SDK instance.
  */
-@property (nonatomic, strong, nonnull, readonly) PA2ClientConfiguration *clientConfiguration;
+@property (nonatomic, strong, nonnull, readonly) PowerAuthClientConfiguration *clientConfiguration;
 /**
- Instance of `PA2KeychainConfiguration` object, provided during the object initialization.
+ Instance of `PowerAuthKeychainConfiguration` object, provided during the object initialization.
  
  Note that the copy of internal object is always returned and thus making changes to the returned object
  doesn't affect this SDK instance.
  */
-@property (nonatomic, strong, nonnull, readonly) PA2KeychainConfiguration *keychainConfiguration;
+@property (nonatomic, strong, nonnull, readonly) PowerAuthKeychainConfiguration *keychainConfiguration;
 	
 /**
  Instance of the token store object, which provides interface for generating token based authentication headers.
- The current implementation is keeping acquired tokens in the PA2Keychain under the `PA2KeychainConfiguration.keychainInstanceName_TokenStore` service name.
+ The current implementation is keeping acquired tokens in the PowerAuthKeychain under the `PowerAuthKeychainConfiguration.keychainInstanceName_TokenStore` service name.
  */
 @property (nonatomic, strong, nonnull, readonly) id<PowerAuthTokenStore> tokenStore;
 
@@ -75,14 +79,14 @@
  Creates an instance of SDK and initializes it with given configuration objects.
  
  @param configuration to be used for initialization.
- @param keychainConfiguration to be used for keychain configuration. If nil is provided, then `PA2KeychainConfiguration.sharedInstance()` is used.
- @param clientConfiguration to be used for HTTP client configuration. If nil is provided, then `PA2ClientConfiguration.sharedInstance()` is used.
+ @param keychainConfiguration to be used for keychain configuration. If nil is provided, then `PowerAuthKeychainConfiguration.sharedInstance()` is used.
+ @param clientConfiguration to be used for HTTP client configuration. If nil is provided, then `PowerAuthClientConfiguration.sharedInstance()` is used.
  
  @return Initialized instance.
  */
 - (nullable instancetype) initWithConfiguration:(nonnull PowerAuthConfiguration *)configuration
-						  keychainConfiguration:(nullable PA2KeychainConfiguration *)keychainConfiguration
-							clientConfiguration:(nullable PA2ClientConfiguration *)clientConfiguration;
+						  keychainConfiguration:(nullable PowerAuthKeychainConfiguration *)keychainConfiguration
+							clientConfiguration:(nullable PowerAuthClientConfiguration *)clientConfiguration;
 
 /**
  Creates an instance of SDK and initializes it with given configuration.
@@ -105,12 +109,12 @@
  Creates a default shared instance and initializes it with given configuration objects.
  
  @param configuration to be used for initialization.
- @param keychainConfiguration to be used for keychain configuration. If nil is provided, then `PA2KeychainConfiguration.sharedInstance()` is used.
- @param clientConfiguration to be used for HTTP client configuration. If nil is provided, then `PA2ClientConfiguration.sharedInstance()` is used.
+ @param keychainConfiguration to be used for keychain configuration. If nil is provided, then `PowerAuthKeychainConfiguration.sharedInstance()` is used.
+ @param clientConfiguration to be used for HTTP client configuration. If nil is provided, then `PowerAuthClientConfiguration.sharedInstance()` is used.
  */
 + (void) initSharedInstance:(nonnull PowerAuthConfiguration *)configuration
-	  keychainConfiguration:(nullable PA2KeychainConfiguration *)keychainConfiguration
-		clientConfiguration:(nullable PA2ClientConfiguration *)clientConfiguration;
+	  keychainConfiguration:(nullable PowerAuthKeychainConfiguration *)keychainConfiguration
+		clientConfiguration:(nullable PowerAuthClientConfiguration *)clientConfiguration;
 
 /** Return the default shared instance of the PowerAuth SDK.
  
@@ -130,11 +134,11 @@
  
  @param activation A PowerAuthActivation object containg all information required for the activation creation.
  @param callback A callback called when the process finishes - it contains an activation fingerprint in case of success and error in case of failure.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) createActivation:(nonnull PowerAuthActivation*)activation
-										  callback:(nonnull void(^)(PA2ActivationResult * _Nullable result, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) createActivation:(nonnull PowerAuthActivation*)activation
+												callback:(nonnull void(^)(PowerAuthActivationResult * _Nullable result, NSError * _Nullable error))callback;
 
 /**
  Create a new standard activation with given name and activation code.
@@ -142,12 +146,12 @@
  @param name Activation name, for example "John's iPhone".
  @param activationCode Activation code, obtained either via QR code scanning or by manual entry.
  @param callback A callback called when the process finishes - it contains an activation fingerprint in case of success and error in case of failure.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) createActivationWithName:(nullable NSString*)name
-											activationCode:(nonnull NSString*)activationCode
-												  callback:(nonnull void(^)(PA2ActivationResult * _Nullable result, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) createActivationWithName:(nullable NSString*)name
+												  activationCode:(nonnull NSString*)activationCode
+														callback:(nonnull void(^)(PowerAuthActivationResult * _Nullable result, NSError * _Nullable error))callback;
 
 /**
  Create a new standard activation with given name, activation code and additional extras information.
@@ -156,13 +160,13 @@
  @param activationCode Activation code, obtained either via QR code scanning or by manual entry.
  @param extras Extra attributes of the activation, used for application specific purposes (for example, info about the client device or system).
  @param callback A callback called when the process finishes - it contains an activation fingerprint in case of success and error in case of failure.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) createActivationWithName:(nullable NSString*)name
-											activationCode:(nonnull NSString*)activationCode
-													extras:(nullable NSString*)extras
-												  callback:(nonnull void(^)(PA2ActivationResult * _Nullable result, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) createActivationWithName:(nullable NSString*)name
+												  activationCode:(nonnull NSString*)activationCode
+														  extras:(nullable NSString*)extras
+														callback:(nonnull void(^)(PowerAuthActivationResult * _Nullable result, NSError * _Nullable error))callback;
 /**
  Create a new custom activation with given name and custom activation.
  
@@ -170,13 +174,13 @@
  @param identityAttributes Custom activation parameters that are used to prove identity of a user.
  @param extras Extra attributes of the activation, used for application specific purposes (for example, info about the client device or system).
  @param callback A callback called when the process finishes - it contains an activation fingerprint in case of success and error in case of failure.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) createActivationWithName:(nullable NSString*)name
-										identityAttributes:(nonnull NSDictionary<NSString*,NSString*>*)identityAttributes
-													extras:(nullable NSString*)extras
-												  callback:(nonnull void(^)(PA2ActivationResult * _Nullable result, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) createActivationWithName:(nullable NSString*)name
+											  identityAttributes:(nonnull NSDictionary<NSString*,NSString*>*)identityAttributes
+														  extras:(nullable NSString*)extras
+														callback:(nonnull void(^)(PowerAuthActivationResult * _Nullable result, NSError * _Nullable error))callback;
 
 /**
  Create a new recovery activation with given name, recovery code, puk and additional extras information.
@@ -186,14 +190,14 @@
  @param puk PUK obtained by manual entry.
  @param extras Extra attributes of the activation, used for application specific purposes (for example, info about the client device or system).
  @param callback A callback called when the process finishes - it contains an activation fingerprint in case of success and error in case of failure.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) createActivationWithName:(nullable NSString*)name
-											  recoveryCode:(nonnull NSString*)recoveryCode
-													   puk:(nonnull NSString*)puk
-													extras:(nullable NSString*)extras
-												  callback:(nonnull void(^)(PA2ActivationResult * _Nullable result, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) createActivationWithName:(nullable NSString*)name
+													recoveryCode:(nonnull NSString*)recoveryCode
+															 puk:(nonnull NSString*)puk
+														  extras:(nullable NSString*)extras
+														callback:(nonnull void(^)(PowerAuthActivationResult * _Nullable result, NSError * _Nullable error))callback;
 
 /**
  Commit activation that was created and store related data using provided authentication instance.
@@ -232,16 +236,16 @@
  If server returns custom object, it is returned in the callback as NSDictionary.
  
  @param callback A callback with activation status result - it contains status information in case of success and error in case of failure.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) fetchActivationStatusWithCallback:(nonnull void(^)(PA2ActivationStatus * _Nullable status, NSDictionary * _Nullable customObject, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) fetchActivationStatusWithCallback:(nonnull void(^)(PowerAuthActivationStatus * _Nullable status, NSDictionary * _Nullable customObject, NSError * _Nullable error))callback;
 
 /**
  Read only property contains last activation status object received from the server.
  You have to call `fetchActivationStatus()` method to update this value.
  */
-@property (nonatomic, strong, nullable, readonly) PA2ActivationStatus * lastFetchedActivationStatus;
+@property (nonatomic, strong, nullable, readonly) PowerAuthActivationStatus * lastFetchedActivationStatus;
 
 /**
  Read only property contains last custom object received from the server, together with the activation status.
@@ -255,11 +259,11 @@
  
  @param authentication An authentication instance specifying what factors should be used to sign the request.
  @param callback A callback with activation removal result - in case of an error, an error instance is not 'nil'.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) removeActivationWithAuthentication:(nonnull PowerAuthAuthentication*)authentication
-														   callback:(nonnull void(^)(NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) removeActivationWithAuthentication:(nonnull PowerAuthAuthentication*)authentication
+																  callback:(nonnull void(^)(NSError * _Nullable error))callback;
 
 /** Removes existing activation from the device.
  
@@ -282,10 +286,10 @@
  @return HTTP header with PowerAuth authorization signature. In case of error, this method return 'nil'.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable PA2AuthorizationHttpHeader*) requestGetSignatureWithAuthentication:(nonnull PowerAuthAuthentication*)authentication
-																		 uriId:(nonnull NSString*)uriId
-																		params:(nullable NSDictionary<NSString*, NSString*>*)params
-																		 error:(NSError * _Nullable * _Nullable)error;
+- (nullable PowerAuthAuthorizationHttpHeader*) requestGetSignatureWithAuthentication:(nonnull PowerAuthAuthentication*)authentication
+																			   uriId:(nonnull NSString*)uriId
+																			  params:(nullable NSDictionary<NSString*, NSString*>*)params
+																			   error:(NSError * _Nullable * _Nullable)error;
 
 /** Compute the HTTP signature header for given HTTP method, URI identifier and HTTP request body using provided authentication information.
  
@@ -299,11 +303,11 @@
  @return HTTP header with PowerAuth authorization signature. In case of error, this method return 'nil'.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable PA2AuthorizationHttpHeader*) requestSignatureWithAuthentication:(nonnull PowerAuthAuthentication*)authentication
-																	 method:(nonnull NSString*)method
-																	  uriId:(nonnull NSString*)uriId
-																	   body:(nullable NSData*)body
-																	  error:(NSError * _Nullable * _Nullable)error;
+- (nullable PowerAuthAuthorizationHttpHeader*) requestSignatureWithAuthentication:(nonnull PowerAuthAuthentication*)authentication
+																		   method:(nonnull NSString*)method
+																			uriId:(nonnull NSString*)uriId
+																			 body:(nullable NSData*)body
+																			error:(NSError * _Nullable * _Nullable)error;
 
 /** Compute the offline signature for given HTTP method, URI identifier and HTTP request body using provided authentication information.
  
@@ -346,17 +350,17 @@
 - (BOOL) unsafeChangePasswordFrom:(nonnull NSString*)oldPassword
 							   to:(nonnull NSString*)newPassword;
 
-/** Change the password, validate old password by calling a PowerAuth Standard RESTful API endpoint '/pa/vault/unlock'.
+/** Change the password, validate old password by calling a PowerAuth Standard RESTful API endpoint '/pa/signature/validate'.
  
  @param oldPassword Old password, currently set to store the data.
  @param newPassword New password, to be set in case authentication with old password passes.
  @param callback The callback method with the password change result.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PA2OperationTask>) changePasswordFrom:(nonnull NSString*)oldPassword
-												  to:(nonnull NSString*)newPassword
-											callback:(nonnull void(^)(NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) changePasswordFrom:(nonnull NSString*)oldPassword
+														to:(nonnull NSString*)newPassword
+												  callback:(nonnull void(^)(NSError * _Nullable error))callback;
 
 /** Regenerate a biometry related factor key.
  
@@ -364,14 +368,14 @@
  
  @param password Password used for authentication during vault unlocking call.
  @param callback The callback method with the biometry key adding operation result.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  */
-- (nullable id<PA2OperationTask>) addBiometryFactor:(nonnull NSString*)password
-										   callback:(nonnull void(^)(NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) addBiometryFactor:(nonnull NSString*)password
+												 callback:(nonnull void(^)(NSError * _Nullable error))callback;
 
 /** Checks if a biometry related factor is present.
  
- This method returns the information about the key value being present in keychain. To check if biometric suppoty is present and enabled on the device, use `PA2Keychain.canUseBiometricAuthentication` property.
+ This method returns the information about the key value being present in keychain. To check if biometric suppoty is present and enabled on the device, use `PowerAuthKeychain.canUseBiometricAuthentication` property.
  
  @return YES if there is a biometry factor present in the keychain, NO otherwise.
  */
@@ -409,11 +413,11 @@
  @param authentication Authentication used for vault unlocking call.
  @param index Index of the derived key using KDF.
  @param callback The callback method with the derived encryption key.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  */
-- (nullable id<PA2OperationTask>) fetchEncryptionKey:(nonnull PowerAuthAuthentication*)authentication
-											   index:(UInt64)index
-											callback:(nonnull void(^)(NSData * _Nullable encryptionKey, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) fetchEncryptionKey:(nonnull PowerAuthAuthentication*)authentication
+													 index:(UInt64)index
+												  callback:(nonnull void(^)(NSData * _Nullable encryptionKey, NSError * _Nullable error))callback;
 
 /** Sign given data with the original device private key (asymetric signature).
  
@@ -422,22 +426,22 @@
  @param authentication Authentication used for vault unlocking call.
  @param data Data to be signed with the private key.
  @param callback The callback method with the data signature.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  */
-- (nullable id<PA2OperationTask>) signDataWithDevicePrivateKey:(nonnull PowerAuthAuthentication*)authentication
-														  data:(nullable NSData*)data
-													  callback:(nonnull void(^)(NSData * _Nullable signature, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) signDataWithDevicePrivateKey:(nonnull PowerAuthAuthentication*)authentication
+																data:(nullable NSData*)data
+															callback:(nonnull void(^)(NSData * _Nullable signature, NSError * _Nullable error))callback;
 
 /** Validate a user password.
  
- This method calls PowerAuth Standard RESTful API endpoint '/pa/vault/unlock' to validate the signature value.
+ This method calls PowerAuth Standard RESTful API endpoint '/pa/signature/validate' to validate the signature value.
  
  @param password Password to be verified.
  @param callback The callback method with error associated with the password validation.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  */
-- (nullable id<PA2OperationTask>) validatePasswordCorrect:(nonnull NSString*)password
-												 callback:(nonnull void(^)(NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) validatePasswordCorrect:(nonnull NSString*)password
+													   callback:(nonnull void(^)(NSError * _Nullable error))callback;
 
 @end
 
@@ -449,24 +453,24 @@
 /**
  Creates a new instance of ECIES encryptor suited for application's general end-to-end encryption purposes. The returned encryptor is
  cryptographically bounded to the PowerAuth configuration, so it can be used with or without a valid activation. The encryptor also contains
- an associated `PA2ECIESMetaData` object, allowing you to properly setup HTTP header for the request.
+ an associated `PowerAuthCoreEciesMetaData` object, allowing you to properly setup HTTP header for the request.
  
- @return New instance of `PA2ECIESEncryptor` object or nil if `PowerAuthConfiguration` contains an invalid data.
+ @return New instance of `PowerAuthCoreEciesEncryptor` object or nil if `PowerAuthConfiguration` contains an invalid data.
  */
-- (nullable PA2ECIESEncryptor*) eciesEncryptorForApplicationScope;
+- (nullable PowerAuthCoreEciesEncryptor*) eciesEncryptorForApplicationScope;
 
 /**
  Creates a new instance of ECIES encryptor suited for application's general end-to-end encryption purposes. The returned encryptor is
  cryptographically bounded to a device's activation, so it can be used only when this instance has a valid activation. The encryptor also contains
- an associated `PA2ECIESMetaData` object, allowing you to properly setup HTTP header for the request.
+ an associated `PowerAuthCoreEciesMetaData` object, allowing you to properly setup HTTP header for the request.
  
  Note that the created encryptor has no reference to this instance of `PowerAuthSDK`. This means that if the `PowerAuthSDK` will loose its
  activation in future, then the encryptor will still be capable to encrypt, or decrypt the data. This is an expected behavior, so if you
  plan to keep the encryptor for multiple requests, then it's up to you to release its instance after you change the state of PowerAuthSDK.
  
- @return New instance of `PA2ECIESEncryptor` object or nil if there's no valid activation.
+ @return New instance of `PowerAuthCoreEciesEncryptor` object or nil if there's no valid activation.
  */
-- (nullable PA2ECIESEncryptor*) eciesEncryptorForActivationScope;
+- (nullable PowerAuthCoreEciesEncryptor*) eciesEncryptorForActivationScope;
 
 @end
 
@@ -488,7 +492,7 @@
  so it will be available when IOS decide to transfer that data to the Apple Watch.
  
  Returns YES if transfer has been properly sheduled, or NO if WCSession is not ready for
- such transmission. Check `PA2WCSessionManager.validSession` documentation for details.
+ such transmission. Check `PowerAuthWCSessionManager.validSession` documentation for details.
  */
 - (BOOL) sendActivationStatusToWatch;
 
@@ -523,13 +527,13 @@
  
  1)  You should calculate PowerAuth signature from the execute block method.
  
- 2)  You have to always call `task.cancel()` on provided `PA2OperationTask` object once the operation is finished,
+ 2)  You have to always call `task.cancel()` on provided `PowerAuthOperationTask` object once the operation is finished,
      otherwise the seriali queue will be blocked indefinitely.
 
  @param execute Block to be executed in the serialized queue.
  @return Cancelable operation task, or nil if there's no activation.
  */
-- (nullable id<PA2OperationTask>) executeBlockOnSerialQueue:(void(^ _Nonnull)(id<PA2OperationTask> _Nonnull task))execute;
+- (nullable id<PowerAuthOperationTask>) executeBlockOnSerialQueue:(void(^ _Nonnull)(id<PowerAuthOperationTask> _Nonnull task))execute;
 
 /**
  Executes provided operation on an internal, serialized operation queue. This gives application an opportunity to serialize
@@ -573,10 +577,10 @@
  
  @param authentication Authentication used for vault unlocking call.
  @param callback The callback method with an activation recovery information.
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  */
-- (nullable id<PA2OperationTask>) activationRecoveryData:(nonnull PowerAuthAuthentication*)authentication
-												callback:(nonnull void(^)(PA2ActivationRecoveryData * _Nullable recoveryData, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) activationRecoveryData:(nonnull PowerAuthAuthentication*)authentication
+													  callback:(nonnull void(^)(PowerAuthActivationRecoveryData * _Nullable recoveryData, NSError * _Nullable error))callback;
 
 /**
  Confirm given recovery code on the server.
@@ -590,10 +594,10 @@
  @param recoveryCode Recovery code to confirm
  @param authentication Authentication used for recovery code confirmation
  @param callback The callback method with activation recovery information. 
- @return PA2OperationTask associated with the running request.
+ @return PowerAuthOperationTask associated with the running request.
  */
-- (nullable id<PA2OperationTask>) confirmRecoveryCode:(nonnull NSString*)recoveryCode
-									   authentication:(nonnull PowerAuthAuthentication*)authentication
-											 callback:(nonnull void(^)(BOOL alreadyConfirmed, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) confirmRecoveryCode:(nonnull NSString*)recoveryCode
+											 authentication:(nonnull PowerAuthAuthentication*)authentication
+												   callback:(nonnull void(^)(BOOL alreadyConfirmed, NSError * _Nullable error))callback;
 
 @end

@@ -1,25 +1,26 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WultraSSLPinning
 import Foundation
 import PowerAuth2
+import PowerAuthCore
 import Swift
 @_exported import WultraSSLPinning
+import _Concurrency
 public protocol SecureDataStore : AnyObject {
   @discardableResult
   func save(data: Foundation.Data, forKey key: Swift.String) -> Swift.Bool
   func loadData(forKey key: Swift.String) -> Foundation.Data?
   func removeData(forKey key: Swift.String)
 }
-extension CertStore {
-  public func powerAuthSslValidationStrategy() -> PowerAuth2.PA2ClientSslValidationStrategy
+extension WultraSSLPinning.CertStore {
+  public func powerAuthSslValidationStrategy() -> PowerAuth2.PowerAuthClientSslValidationStrategy
   public static func powerAuthCertStore(configuration: WultraSSLPinning.CertStoreConfiguration) -> WultraSSLPinning.CertStore
 }
-@objc public class PowerAuthSslPinningValidationStrategy : ObjectiveC.NSObject, PowerAuth2.PA2ClientSslValidationStrategy {
+@objc public class PowerAuthSslPinningValidationStrategy : ObjectiveC.NSObject, PowerAuth2.PowerAuthClientSslValidationStrategy {
   final public let certStore: WultraSSLPinning.CertStore
   public init(certStore: WultraSSLPinning.CertStore)
   @objc public func validateSsl(for session: Foundation.URLSession, challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  @objc override dynamic public init()
   @objc deinit
 }
 public class PowerAuthSecureDataStore : WultraSSLPinning.SecureDataStore {
@@ -79,7 +80,7 @@ public enum SSLValidationStrategy {
   public static func fatalError(_ message: @autoclosure () -> Swift.String) -> Swift.Never
   @objc deinit
 }
-extension CertStore {
+extension WultraSSLPinning.CertStore {
   public enum ValidationResult {
     case trusted
     case untrusted
@@ -94,7 +95,7 @@ extension CertStore {
   public func validate(commonName: Swift.String, certificateData: Foundation.Data) -> WultraSSLPinning.CertStore.ValidationResult
   public func validate(challenge: Foundation.URLAuthenticationChallenge) -> WultraSSLPinning.CertStore.ValidationResult
 }
-extension CertStore {
+extension WultraSSLPinning.CertStore {
   public enum UpdateMode {
     case `default`
     case forced
@@ -116,7 +117,7 @@ extension CertStore {
       get
     }
   }
-  public func update(mode: WultraSSLPinning.CertStore.UpdateMode = .default, completionQueue: Dispatch.DispatchQueue = .main, completion: @escaping (WultraSSLPinning.CertStore.UpdateResult, Swift.Error?) -> Swift.Void)
+  public func update(mode: WultraSSLPinning.CertStore.UpdateMode = .default, completionQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: WultraSSLPinning.CertStore.UpdateResult, _ error: Swift.Error?) -> Swift.Void)
 }
 public protocol CryptoProvider : AnyObject {
   func ecdsaValidateSignatures(signedData: WultraSSLPinning.SignedData, publicKey: WultraSSLPinning.ECPublicKey) -> Swift.Bool
@@ -138,7 +139,7 @@ public class PowerAuthCryptoProvider : WultraSSLPinning.CryptoProvider {
   public func getRandomData(length: Swift.Int) -> Foundation.Data
   @objc deinit
 }
-extension PA2ECPublicKey : WultraSSLPinning.ECPublicKey {
+extension PowerAuthCore.PowerAuthCoreECPublicKey : WultraSSLPinning.ECPublicKey {
 }
 extension WultraSSLPinning.SSLValidationStrategy : Swift.Equatable {}
 extension WultraSSLPinning.SSLValidationStrategy : Swift.Hashable {}

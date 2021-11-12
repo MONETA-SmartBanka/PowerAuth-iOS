@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-#import "PowerAuthConfiguration.h"
-#import "PowerAuthToken.h"
-#import "PA2SessionStatusProvider.h"
-#import "PA2KeychainConfiguration.h"
-#import "PA2AuthorizationHttpHeader.h"
+#import <PowerAuth2ForExtensions/PowerAuthConfiguration.h>
+#import <PowerAuth2ForExtensions/PowerAuthToken.h>
+#import <PowerAuth2ForExtensions/PowerAuthSessionStatusProvider.h>
+#import <PowerAuth2ForExtensions/PowerAuthKeychainConfiguration.h>
+#import <PowerAuth2ForExtensions/PowerAuthAuthorizationHttpHeader.h>
 
-@interface PowerAuthExtensionSDK : NSObject<PA2SessionStatusProvider>
+@interface PowerAuthExtensionSDK : NSObject<PowerAuthSessionStatusProvider>
 
 /**
  Instance of the token store object, which provides interface for generating token based authentication headers.
@@ -40,6 +40,6 @@
  A designated initializer.
  */
 - (nullable instancetype) initWithConfiguration:(nonnull PowerAuthConfiguration*)configuration
-						  keychainConfiguration:(nonnull PA2KeychainConfiguration*)keychainConfiguration;
+						  keychainConfiguration:(nonnull PowerAuthKeychainConfiguration*)keychainConfiguration;
 
 @end
