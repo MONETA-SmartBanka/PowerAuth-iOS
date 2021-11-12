@@ -19,6 +19,9 @@ let package = Package(
         .library(
             name: "WultraSSLPinning",
             targets: ["WultraSSLPinning", "PowerAuth2"]),
+        .library(
+            name: "PowerAuthCore",
+            targets: ["PowerAuthCore"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -31,5 +34,6 @@ let package = Package(
         .binaryTarget(name: "PowerAuth2ForExtensions", path: "Sources/PowerAuth2ForExtensions.xcframework"),
         .binaryTarget(name: "PowerAuth2ForWatch", path: "Sources/PowerAuth2ForWatch.xcframework"),
         .binaryTarget(name: "WultraSSLPinning", path: "Sources/WultraSSLPinning.xcframework"),
+        .binaryTarget(name: "PowerAuthCore", path: "Sources/PowerAuthCore.xcframework"),
     ]
 )
