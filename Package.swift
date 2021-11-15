@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PowerAuth2",
-            targets: ["PowerAuth2"]),
+            targets: ["PowerAuth2", "PowerAuthCore"]),
         .library(
             name: "PowerAuth2ForExtensions",
             targets: ["PowerAuth2ForExtensions"]),
