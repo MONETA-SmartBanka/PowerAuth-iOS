@@ -9,18 +9,23 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PowerAuth2",
+            type: .dynamic,
             targets: ["PowerAuth2", "PowerAuthCore"]),
         .library(
             name: "PowerAuth2ForExtensions",
+            type: .dynamic,
             targets: ["PowerAuth2ForExtensions"]),
         .library(
             name: "PowerAuth2ForWatch",
+            type: .dynamic,
             targets: ["PowerAuth2ForWatch"]),
         .library(
             name: "WultraSSLPinning",
+            type: .dynamic,
             targets: ["WultraSSLPinning", "PowerAuth2"]),
         .library(
             name: "PowerAuthCore",
+            type: .dynamic,
             targets: ["PowerAuthCore"]),
     ],
     dependencies: [
