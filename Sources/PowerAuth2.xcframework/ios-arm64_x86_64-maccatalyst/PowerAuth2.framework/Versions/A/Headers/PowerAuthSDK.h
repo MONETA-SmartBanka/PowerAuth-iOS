@@ -25,8 +25,10 @@
 #import <PowerAuth2/PowerAuthToken.h>
 #import <PowerAuth2/PowerAuthToken+WatchSupport.h>
 #import <PowerAuth2/PowerAuthAuthorizationHttpHeader.h>
-#import <PowerAuth2/PowerAuthSessionStatusProvider.h>
+#import <PowerAuth2/PowerAuthCoreSessionProvider.h>
 #import <PowerAuth2/PowerAuthOperationTask.h>
+#import <PowerAuth2/PowerAuthExternalPendingOperation.h>
+
 // Deprecated
 #import <PowerAuth2/PowerAuthDeprecated.h>
 
@@ -35,7 +37,7 @@
 
 @interface PowerAuthSDK : NSObject<PowerAuthSessionStatusProvider>
 
-/** Reference to the low-level PowerAuthCoreSession class.
+/** Reference to object that provides the low-level PowerAuthCoreSession class.
  
  WARNING
  
@@ -45,7 +47,7 @@
  protective mechanisms for keeping the session state actually consistent in the functional (not low level) sense. As a result, you
  may break your activation state (for example, by changing password from incorrect value to some other value).
  */
-@property (nonatomic, strong, nonnull, readonly) PowerAuthCoreSession *session;
+@property (nonatomic, strong, nonnull, readonly) id<PowerAuthCoreSessionProvider> sessionProvider;
 
 /**
  Instance of configuration, provided during the object initialization.
@@ -83,6 +85,7 @@
  @param clientConfiguration to be used for HTTP client configuration. If nil is provided, then `PowerAuthClientConfiguration.sharedInstance()` is used.
  
  @return Initialized instance.
+ @exception NSException thrown in case configuration is not valid.
  */
 - (nullable instancetype) initWithConfiguration:(nonnull PowerAuthConfiguration *)configuration
 						  keychainConfiguration:(nullable PowerAuthKeychainConfiguration *)keychainConfiguration
@@ -94,6 +97,7 @@
 	 
  @param configuration to be used for initialization.
  @return Initialized instance.
+ @exception NSException thrown in case configuration is not valid.
  */
 - (nullable instancetype) initWithConfiguration:(nonnull PowerAuthConfiguration *)configuration;
 
@@ -127,7 +131,7 @@
  @return YES if session was restored, NO otherwise.
  @exception NSException thrown in case configuration is not present.
  */
-- (BOOL) restoreState;
+- (BOOL) restoreState PA2_DEPRECATED(1.7.0);
 
 /**
  Create a new activation.
@@ -221,25 +225,19 @@
 								error:(NSError * _Nullable * _Nullable)error;
 
 /**
- Read only property contains activation identifier or nil if object has no valid activation.
- */
-@property (nonatomic, strong, nullable, readonly) NSString *activationIdentifier;
-
-/**
  Read only property contains fingerprint calculated from device's public key or nil if object has no valid activation.
  */
 @property (nonatomic, strong, nullable, readonly) NSString *activationFingerprint;
 
-
 /** Fetch the activation status for current activation.
- 
- If server returns custom object, it is returned in the callback as NSDictionary.
  
  @param callback A callback with activation status result - it contains status information in case of success and error in case of failure.
  @return PowerAuthOperationTask associated with the running request.
  @exception NSException thrown in case configuration is not present.
  */
-- (nullable id<PowerAuthOperationTask>) fetchActivationStatusWithCallback:(nonnull void(^)(PowerAuthActivationStatus * _Nullable status, NSDictionary * _Nullable customObject, NSError * _Nullable error))callback;
+- (nullable id<PowerAuthOperationTask>) getActivationStatusWithCallback:(nonnull void(^)(PowerAuthActivationStatus * _Nullable status, NSError * _Nullable error))callback
+	NS_SWIFT_NAME(fetchActivationStatus(callback:));
+
 
 /**
  Read only property contains last activation status object received from the server.
@@ -248,11 +246,22 @@
 @property (nonatomic, strong, nullable, readonly) PowerAuthActivationStatus * lastFetchedActivationStatus;
 
 /**
+ Fetch the activation status for current activation. If server returns custom object, it is returned in the callback as NSDictionary.
+ 
+ This method is deprecated if favor of method that doesn't take customObject in its callback. The custom object is now a part of PowerAuthActivationStatus object.
+ 
+ @param callback A callback with activation status result - it contains status information in case of success and error in case of failure.
+ @return PowerAuthOperationTask associated with the running request.
+ @exception NSException thrown in case configuration is not present.
+ */
+- (nullable id<PowerAuthOperationTask>) fetchActivationStatusWithCallback:(nonnull void(^)(PowerAuthActivationStatus * _Nullable status, NSDictionary * _Nullable customObject, NSError * _Nullable error))callback PA2_DEPRECATED(1.7.0);
+
+/**
  Read only property contains last custom object received from the server, together with the activation status.
  Note that the value is optional and PowerAuth Application Server must support this custom object.
  You have to call `fetchActivationStatus()` method to update this value.
  */
-@property (nonatomic, strong, nullable, readonly) NSDictionary<NSString*, NSObject*>* lastFetchedCustomObject;
+@property (nonatomic, strong, nullable, readonly) NSDictionary<NSString*, NSObject*>* lastFetchedCustomObject PA2_DEPRECATED(1.7.0);
 
 
 /** Remove current activation by calling a PowerAuth Standard RESTful API endpoint '/pa/activation/remove'.
@@ -399,12 +408,31 @@
 - (void) authenticateUsingBiometryWithPrompt:(nonnull NSString *)prompt
 									callback:(nonnull void(^)(PowerAuthAuthentication * _Nullable authentication, NSError * _Nullable error))callback;
 
+/** Prepare PowerAuthAuthentication object for future PowerAuth signature calculation with a biometry and possession factors involved.
+ 
+ The method is useful for situations where business processes require compute two or more different PowerAuth biometry signatures in one interaction with the user. To achieve this, the application must acquire the custom-created PowerAuthAuthentication object first and then use it for the required signature calculations. It's recommended to keep this instance referenced only for a limited time, required for all future signature calculations.
+  
+ Be aware, that you must not execute the next HTTP request signed with the same credentials when the previous one fails with the 401 HTTP status code. If you do, then you risk blocking the user's activation on the server.
+ 
+ @param context A local authentication context that can affect a biometry authentication dialog.
+ @param callback A callback with result, always executed on the main thread.
+ */
+- (void) authenticateUsingBiometryWithContext:(nonnull LAContext *)context
+									 callback:(nonnull void(^)(PowerAuthAuthentication * _Nullable authentication, NSError * _Nullable error))callback API_UNAVAILABLE(tvos);
+
 /** Unlock all keys stored in a biometry related keychain and keeps them cached for the scope of the block.
  
  There are situations where biometry related keys from different PowerAuthSDK instances are needed in a single business process. For example, when having a master-child activation pair, computing signature in the child activation requires master activation to use vault unlock first and then, after the request is completed, child activation can compute the signature. This would normally trigger biometry dialog twice. To avoid that, all biometry related keys are fetched at once and cached for a limited amount of time.
  */
 - (void) unlockBiometryKeysWithPrompt:(nonnull NSString*)prompt
 							withBlock:(nonnull void(^)(NSDictionary<NSString*, NSData*> * _Nullable keys, BOOL userCanceled))block;
+
+/** Unlock all keys stored in a biometry related keychain and keeps them cached for the scope of the block.
+ 
+ There are situations where biometry related keys from different PowerAuthSDK instances are needed in a single business process. For example, when having a master-child activation pair, computing signature in the child activation requires master activation to use vault unlock first and then, after the request is completed, child activation can compute the signature. This would normally trigger biometry dialog twice. To avoid that, all biometry related keys are fetched at once and cached for a limited amount of time.
+ */
+- (void) unlockBiometryKeysWithContext:(nonnull LAContext*)context
+							 withBlock:(nonnull void(^)(NSDictionary<NSString*, NSData*> * _Nullable keys, BOOL userCanceled))block API_UNAVAILABLE(tvos);
 
 /** Generate an derived encryption key with given index.
  
@@ -599,5 +627,57 @@
 - (nullable id<PowerAuthOperationTask>) confirmRecoveryCode:(nonnull NSString*)recoveryCode
 											 authentication:(nonnull PowerAuthAuthentication*)authentication
 												   callback:(nonnull void(^)(BOOL alreadyConfirmed, NSError * _Nullable error))callback;
+
+@end
+
+
+
+#pragma mark - Activation data sharing
+
+@interface PowerAuthSDK (ActivationDataSharing)
+
+/**
+ If activation data sharing via app group is enabled for this instance of PowerAuthSDK, then this property may contain
+ an information about pending sensitive operation, currently running in an external application. Your application should
+ instruct user to switch to this application to complete the task.
+ */
+@property (nonatomic, strong, readonly, nullable) PowerAuthExternalPendingOperation * externalPendingOperation;
+
+@end
+
+
+#pragma mark - External Encryption Key
+
+@interface PowerAuthSDK (EEK)
+
+/**
+ Contains YES if EEK (external encryption key) is set.
+ */
+@property (nonatomic, readonly) BOOL hasExternalEncryptionKey;
+
+/**
+ Sets a known external encryption key to the internal configuration. This method
+ is useful, when the activation is using EEK, but the key was not known during the PowerAuthSDK
+ creation. You can restore the activation without the EEK and use it for a very limited set of
+ operations, like the getting activation status. The data signing will also work correctly,
+ but only for a possession factor, which is by design not protected with EEK.
+ @param externalEncryptionKey EEK to be set to the internal configuration.
+ */
+- (BOOL) setExternalEncryptionKey:(nonnull NSData *)externalEncryptionKey
+							error:(NSError * _Nullable * _Nullable)error;
+
+/**
+ Add a new external encryption key permanently to the activated PowerAuthSDK and to the configuration object. The method
+ is is useful for scenarios, when you need to add the EEK additionally, after the activation.
+ @param externalEncryptionKey A new key to add. The data object must contain exactly 16 bytes.
+ */
+- (BOOL) addExternalEncryptionKey:(nonnull NSData*)externalEncryptionKey
+							error:(NSError * _Nullable * _Nullable)error;
+
+/**
+ Remove existing external encryption key from the activated PowerAuthSDK and from the configuration object. The valid
+ activation must be present and EEK must be set at the time of call (e.g. 'hasExternalEncryptionKey' returns true).
+ */
+- (BOOL) removeExternalEncryptionKey:(NSError * _Nullable * _Nullable)error;
 
 @end

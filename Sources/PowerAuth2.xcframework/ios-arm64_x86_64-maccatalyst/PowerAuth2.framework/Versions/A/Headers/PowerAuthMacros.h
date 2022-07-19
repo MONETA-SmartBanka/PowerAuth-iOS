@@ -99,3 +99,31 @@
 #else
 	#define PA2_HAS_CORE_MODULE 0
 #endif
+
+// LAContext availability
+#if TARGET_OS_IOS == 1 || TARGET_OS_MACCATALYST == 1
+	#define PA2_HAS_LACONTEXT 1
+#else
+	#define PA2_HAS_LACONTEXT 0
+	#define LAContext NSObject
+#endif
+
+// SDK modules availability
+#if PA2_HAS_CORE_MODULE
+	// PowerAuth2 module
+	#define PA2_MODULE_MAIN_SDK			1
+	#define PA2_MODULE_WATCH_SDK		0
+	#define PA2_MODULE_APPEXT_SDK		0
+#else
+	#if TARGET_OS_WATCH
+		// PowerAuth2ForWatch module
+		#define PA2_MODULE_MAIN_SDK		0
+		#define PA2_MODULE_WATCH_SDK	1
+		#define PA2_MODULE_APPEXT_SDK	0
+	#else
+		// PowerAuth2ForExtensions module
+		#define PA2_MODULE_MAIN_SDK		0
+		#define PA2_MODULE_WATCH_SDK	0
+		#define PA2_MODULE_APPEXT_SDK	1
+	#endif
+#endif

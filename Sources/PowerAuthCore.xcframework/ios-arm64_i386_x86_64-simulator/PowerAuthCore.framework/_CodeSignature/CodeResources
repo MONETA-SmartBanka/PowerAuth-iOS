@@ -10,11 +10,15 @@
 		</data>
 		<key>Headers/PowerAuthCoreCryptoUtils.h</key>
 		<data>
-		HMuGHGltt2NeorTxeruEx569pJo=
+		jfY2A73E/DPANrDr2nOhmho8aoQ=
+		</data>
+		<key>Headers/PowerAuthCoreDebugMonitor.h</key>
+		<data>
+		4+Ks3GhNl9dxuTPE02x0MJzII1w=
 		</data>
 		<key>Headers/PowerAuthCoreDeprecated.h</key>
 		<data>
-		hn//2KTIKlpAwCxUo0JgZZwq/v8=
+		hHLG+k2D39AUEHm2fPH4CXtTmlE=
 		</data>
 		<key>Headers/PowerAuthCoreEciesEncryptor.h</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Headers/PowerAuthCoreSession.h</key>
 		<data>
-		t5SebrsbNQmjnvPjdboaSfRdblE=
+		dZ2Gb/6jBcTVZ1ACg3APkmbXckc=
 		</data>
 		<key>Headers/PowerAuthCoreTypes.h</key>
 		<data>
@@ -50,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jiKvXRYU5n+Tjk6oQX1T+LscSaM=
+		wrAEamUo00wYlprdTScIpZEW6bY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,22 +78,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HMuGHGltt2NeorTxeruEx569pJo=
+			jfY2A73E/DPANrDr2nOhmho8aoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ic8btXH5dQ7uuRKGheylBoRm7Ub7Krr+iB7ZIa6f6gQ=
+			gOGddSunj0Gaf9fDySM7ems+Cf+SdESxYGkDPw+3AOw=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthCoreDebugMonitor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4+Ks3GhNl9dxuTPE02x0MJzII1w=
+			</data>
+			<key>hash2</key>
+			<data>
+			YBwE3ZKsS+gCittJGwnsZwXYtEFqEWV2W2AVCQ154K0=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreDeprecated.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hn//2KTIKlpAwCxUo0JgZZwq/v8=
+			hHLG+k2D39AUEHm2fPH4CXtTmlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			nPPdv2jacD5rP2zp9gGPvXGl92xNb0E5pHX9CalVhuo=
+			zXJNRhFREhEG+FsAbi+2CnjFPJSZsGjd9sfccPvqCgE=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreEciesEncryptor.h</key>
@@ -162,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t5SebrsbNQmjnvPjdboaSfRdblE=
+			dZ2Gb/6jBcTVZ1ACg3APkmbXckc=
 			</data>
 			<key>hash2</key>
 			<data>
-			dravthTUcT0fjvRdgASnj920/maGjaAQh5W89Ni5vFM=
+			2c8RCioLjNPFgkATNTb553BD/JIBPlPy4nrVjWGpUyQ=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreTypes.h</key>
