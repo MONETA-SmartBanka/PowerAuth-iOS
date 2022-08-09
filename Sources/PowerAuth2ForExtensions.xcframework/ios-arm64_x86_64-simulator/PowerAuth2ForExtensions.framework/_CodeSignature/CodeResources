@@ -74,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pcLzsNMkkWx7O6GZ2xtGoKlTOjA=
+		25NHukVB+IWVf/3dJD9ONwLv1mk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,10 +85,6 @@
 	<dict>
 		<key>Headers/PowerAuth2ForExtensions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			q7nrxBfa7PQU2LjMT/ge65XpKZQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			7K2C+WQuutLvByAt2K8HxB57cObFmcbDVbTs1Vk4CU8=
@@ -96,10 +92,6 @@
 		</dict>
 		<key>Headers/PowerAuthAuthentication.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			K7b4biANqrTeOWXjgIvfuzmC9XU=
-			</data>
 			<key>hash2</key>
 			<data>
 			lE5fQlq6MogLKjFX4ph/73hxzjqy99Q/YMMmITLA5F0=
@@ -107,10 +99,6 @@
 		</dict>
 		<key>Headers/PowerAuthAuthorizationHttpHeader.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Rqv6833P1ZonkvgBsI2lwuA0mJU=
-			</data>
 			<key>hash2</key>
 			<data>
 			mhnElizawX3GtimlDuMxP3h6bKpikUoJ3xpQ+Sf9Axw=
@@ -118,10 +106,6 @@
 		</dict>
 		<key>Headers/PowerAuthConfiguration.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YPIrIpvXtowjZ4tINiMQNubMCGc=
-			</data>
 			<key>hash2</key>
 			<data>
 			RGerH/xl6AQ4T+1owRt4sMOe0tmpfC/Y7VWdz/dT6WY=
@@ -129,10 +113,6 @@
 		</dict>
 		<key>Headers/PowerAuthDeprecated.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CMRPwoRJU//fnCGwyC7xKYBszAI=
-			</data>
 			<key>hash2</key>
 			<data>
 			57rNymiun1MRc7NlNSRN7je7qp27Gu/PXenn8H/7dEo=
@@ -140,10 +120,6 @@
 		</dict>
 		<key>Headers/PowerAuthErrorConstants.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kyNBWMzXkIUVVgwUor0fqAqi8hE=
-			</data>
 			<key>hash2</key>
 			<data>
 			Fw1VDLlMjp8v0pJl1UNVq2dTsBFGZbkVG3AnUV0AD9o=
@@ -151,10 +127,6 @@
 		</dict>
 		<key>Headers/PowerAuthExtensionSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S7oZNCajwnSdVaTOfGdDT7YIlK0=
-			</data>
 			<key>hash2</key>
 			<data>
 			rOadM88HXD/aXA8ebaEwP1g1FYt1pKfSteB6FOM76HY=
@@ -162,10 +134,6 @@
 		</dict>
 		<key>Headers/PowerAuthKeychain.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			j+tNuEfKKICLcv985bky+pkamkk=
-			</data>
 			<key>hash2</key>
 			<data>
 			SYmZkPboMDESCzLylz+/SABf8b0Fs4XqKB7A8LJmzoA=
@@ -173,10 +141,6 @@
 		</dict>
 		<key>Headers/PowerAuthKeychainAuthentication.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+s9Yvohvo/e3i9IKOGzT6X3nV6Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			wWAwBnceZwhFxeoBhQPTqazzy4SBJof+kd2Ao3m3vJ0=
@@ -184,10 +148,6 @@
 		</dict>
 		<key>Headers/PowerAuthKeychainConfiguration.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iPtJDgaYLJE6Wax/kLDq7hZtCO0=
-			</data>
 			<key>hash2</key>
 			<data>
 			egKq928fpDLRVu0hRWmmS64yWPlHGH7qWYdTkhmOM5U=
@@ -195,10 +155,6 @@
 		</dict>
 		<key>Headers/PowerAuthLog.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MadwrYytCKj0Za870CqTOivPtEk=
-			</data>
 			<key>hash2</key>
 			<data>
 			1GfeQJxxsL9KpgjtOte9K1hFyAQLzvkvQMOp30h87xU=
@@ -206,10 +162,6 @@
 		</dict>
 		<key>Headers/PowerAuthMacros.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JhGvictgKPHWspEga7EDF3aFBYo=
-			</data>
 			<key>hash2</key>
 			<data>
 			l1aSw/jJ68PDHCJsqairnIyanpdXOyEYAsPL8QTxFX0=
@@ -217,10 +169,6 @@
 		</dict>
 		<key>Headers/PowerAuthOperationTask.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pzzPidkJBze4RMkFQC6UGrcK6JM=
-			</data>
 			<key>hash2</key>
 			<data>
 			yKaKiIcfgH394kRy0UgM5thTq8sjzDm14vXop7VZCRU=
@@ -228,10 +176,6 @@
 		</dict>
 		<key>Headers/PowerAuthSessionStatusProvider.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kpTSuMIxI5Dd0hMmZcVT1QrpPjQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			drE30umSxhQUeyqbRRVjUFbwmPkOwlQ4txcsKBtHb7A=
@@ -239,10 +183,6 @@
 		</dict>
 		<key>Headers/PowerAuthSharingConfiguration.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			k+diEt39MOXps0KmbNkV3xlihmM=
-			</data>
 			<key>hash2</key>
 			<data>
 			savzPDRGEusjgjE1hFTFe3/iAWMdAcGiH0R8YYf6JBw=
@@ -250,10 +190,6 @@
 		</dict>
 		<key>Headers/PowerAuthSystem.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qTaQWfia1xw7V0PcuGeoqflSBig=
-			</data>
 			<key>hash2</key>
 			<data>
 			Sa/oR7mJAkR0WOAJ5Y/hwqYxz8QAELlxOZ1n0gtPsY0=
@@ -261,10 +197,6 @@
 		</dict>
 		<key>Headers/PowerAuthToken.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			11s8pl8DmJr7+lhSzByT0Zd62As=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZV49/lp/kR1xeDM2ET45nWLBraZB/JEWpd7Y+ZnbThQ=
@@ -272,10 +204,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0MjAN4SMqj1EOr5uL3U07bChsA4=
-			</data>
 			<key>hash2</key>
 			<data>
 			oRhcPXX0nj6pJ7p+NUV/m7AoItwZzCtVUuxO0NmbodU=
