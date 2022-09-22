@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AppProtection-Swift.h</key>
 		<data>
-		wo8qXuM9MvEmTRq/xjyCHUNNLGw=
+		SHfTXg5uhhR2iutbd1y/rzhtfk0=
 		</data>
 		<key>Headers/AppProtection.h</key>
 		<data>
@@ -14,67 +14,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DuVHJ/Jz7OEU4bkY803bu1I0wuY=
+		PzNJ9sAWmtZNFebq/MKKongsTME=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm.swiftdoc</key>
 		<data>
-		bO6wqYNXmxASiOtHhO65sbTeeCE=
+		8Qq+CVGxcIobk0dOUF6HONCWNCI=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm.swiftinterface</key>
 		<data>
-		fMubNofM5Eb1Tq7vEWD0MODYLaQ=
+		8HxrGP+hb1Q2NURuNhunh3h9O1E=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm.swiftmodule</key>
 		<data>
-		pr77cL7ili8nFs6u6MnX2T4fTeQ=
+		51KtL5Z2kZZ4CIPV9QF9gjcEDPI=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gLMSOetaKTgPibtggzGuKarc4XI=
+		Va7aFJIpsGCJVIeudefFnJQZjho=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		gCgvadvoEXPiHRA9IsHPMK5l3pI=
+		0vCP5rQuGCTgZ0XHItbDqnMJNK8=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ul/k0LwSNpw6+Yh/f2h23eZoqnQ=
+		xZMu7vBByBgjwlRE/O5iAhn7s2s=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		gLMSOetaKTgPibtggzGuKarc4XI=
+		Va7aFJIpsGCJVIeudefFnJQZjho=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		gCgvadvoEXPiHRA9IsHPMK5l3pI=
+		0vCP5rQuGCTgZ0XHItbDqnMJNK8=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ul/k0LwSNpw6+Yh/f2h23eZoqnQ=
+		xZMu7vBByBgjwlRE/O5iAhn7s2s=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		bO6wqYNXmxASiOtHhO65sbTeeCE=
+		8Qq+CVGxcIobk0dOUF6HONCWNCI=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		fMubNofM5Eb1Tq7vEWD0MODYLaQ=
+		8HxrGP+hb1Q2NURuNhunh3h9O1E=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		pr77cL7ili8nFs6u6MnX2T4fTeQ=
+		51KtL5Z2kZZ4CIPV9QF9gjcEDPI=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		bO6wqYNXmxASiOtHhO65sbTeeCE=
+		8Qq+CVGxcIobk0dOUF6HONCWNCI=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/armv7.swiftinterface</key>
 		<data>
-		fMubNofM5Eb1Tq7vEWD0MODYLaQ=
+		8HxrGP+hb1Q2NURuNhunh3h9O1E=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		pr77cL7ili8nFs6u6MnX2T4fTeQ=
+		51KtL5Z2kZZ4CIPV9QF9gjcEDPI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wo8qXuM9MvEmTRq/xjyCHUNNLGw=
+			SHfTXg5uhhR2iutbd1y/rzhtfk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9DP3DoM909M0zLlg7Sp+R9f8NJcDB5tXPLxD7aL0C7w=
+			9BxIJvRFqvggYxmo/p5J/SlnIK9tqHL0SFwizck0LEU=
 			</data>
 		</dict>
 		<key>Headers/AppProtection.h</key>
@@ -117,165 +117,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bO6wqYNXmxASiOtHhO65sbTeeCE=
+			8Qq+CVGxcIobk0dOUF6HONCWNCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			17ka2bf7+N0GAHBImRNKUAk+wlxxbRqmNNSEc8dHvkE=
+			Aa0PaM1ccDRFnuB02NIyPRlL001OOCu8QMCi67X5JwE=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fMubNofM5Eb1Tq7vEWD0MODYLaQ=
+			8HxrGP+hb1Q2NURuNhunh3h9O1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ZYKSkMraKhBmR5viFDSQTdzfowsqOTcABKsGM74smg=
+			HiPW4aDaqh80t0zbtjveTjloouWR5L0NG7s7/q7OdyQ=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pr77cL7ili8nFs6u6MnX2T4fTeQ=
+			51KtL5Z2kZZ4CIPV9QF9gjcEDPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0pzRdtM+rxd7Drz4y/iBCk5LJSX6fcv2DblMfV5d9WM=
+			NNci2CEApqMn60aLJnKm34neZ0PHWB+WRIOwAGn3wIo=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gLMSOetaKTgPibtggzGuKarc4XI=
+			Va7aFJIpsGCJVIeudefFnJQZjho=
 			</data>
 			<key>hash2</key>
 			<data>
-			jzyFOQHVLDvILVgTPlZVKtiPFFCDr2QxGe/PaTeLAII=
+			62Md1rPWFKS/hRIgUsgmM3nMLlZ4XcpT9kHXmQGc/7E=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gCgvadvoEXPiHRA9IsHPMK5l3pI=
+			0vCP5rQuGCTgZ0XHItbDqnMJNK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			kQ4z6CUkHKU3QgpkdFrajxRdRUuMvaxzKNMXuAi/oJ0=
+			UeINZoFgmn049zXc0x81f6PzTiLE25RwZ3NSPKWvh/Q=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ul/k0LwSNpw6+Yh/f2h23eZoqnQ=
+			xZMu7vBByBgjwlRE/O5iAhn7s2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			E03bD4ZiPdEeHfOzLmNZ7MrR0eGAJkAUssUqZINqlzc=
+			/4gP3z15oIRG/B2B88gVbwc8J008PrUxBBdmjAtwEcE=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gLMSOetaKTgPibtggzGuKarc4XI=
+			Va7aFJIpsGCJVIeudefFnJQZjho=
 			</data>
 			<key>hash2</key>
 			<data>
-			jzyFOQHVLDvILVgTPlZVKtiPFFCDr2QxGe/PaTeLAII=
+			62Md1rPWFKS/hRIgUsgmM3nMLlZ4XcpT9kHXmQGc/7E=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gCgvadvoEXPiHRA9IsHPMK5l3pI=
+			0vCP5rQuGCTgZ0XHItbDqnMJNK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			kQ4z6CUkHKU3QgpkdFrajxRdRUuMvaxzKNMXuAi/oJ0=
+			UeINZoFgmn049zXc0x81f6PzTiLE25RwZ3NSPKWvh/Q=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ul/k0LwSNpw6+Yh/f2h23eZoqnQ=
+			xZMu7vBByBgjwlRE/O5iAhn7s2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			E03bD4ZiPdEeHfOzLmNZ7MrR0eGAJkAUssUqZINqlzc=
+			/4gP3z15oIRG/B2B88gVbwc8J008PrUxBBdmjAtwEcE=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bO6wqYNXmxASiOtHhO65sbTeeCE=
+			8Qq+CVGxcIobk0dOUF6HONCWNCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			17ka2bf7+N0GAHBImRNKUAk+wlxxbRqmNNSEc8dHvkE=
+			Aa0PaM1ccDRFnuB02NIyPRlL001OOCu8QMCi67X5JwE=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fMubNofM5Eb1Tq7vEWD0MODYLaQ=
+			8HxrGP+hb1Q2NURuNhunh3h9O1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ZYKSkMraKhBmR5viFDSQTdzfowsqOTcABKsGM74smg=
+			HiPW4aDaqh80t0zbtjveTjloouWR5L0NG7s7/q7OdyQ=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pr77cL7ili8nFs6u6MnX2T4fTeQ=
+			51KtL5Z2kZZ4CIPV9QF9gjcEDPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0pzRdtM+rxd7Drz4y/iBCk5LJSX6fcv2DblMfV5d9WM=
+			NNci2CEApqMn60aLJnKm34neZ0PHWB+WRIOwAGn3wIo=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bO6wqYNXmxASiOtHhO65sbTeeCE=
+			8Qq+CVGxcIobk0dOUF6HONCWNCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			17ka2bf7+N0GAHBImRNKUAk+wlxxbRqmNNSEc8dHvkE=
+			Aa0PaM1ccDRFnuB02NIyPRlL001OOCu8QMCi67X5JwE=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/armv7.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fMubNofM5Eb1Tq7vEWD0MODYLaQ=
+			8HxrGP+hb1Q2NURuNhunh3h9O1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ZYKSkMraKhBmR5viFDSQTdzfowsqOTcABKsGM74smg=
+			HiPW4aDaqh80t0zbtjveTjloouWR5L0NG7s7/q7OdyQ=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pr77cL7ili8nFs6u6MnX2T4fTeQ=
+			51KtL5Z2kZZ4CIPV9QF9gjcEDPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0pzRdtM+rxd7Drz4y/iBCk5LJSX6fcv2DblMfV5d9WM=
+			NNci2CEApqMn60aLJnKm34neZ0PHWB+WRIOwAGn3wIo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

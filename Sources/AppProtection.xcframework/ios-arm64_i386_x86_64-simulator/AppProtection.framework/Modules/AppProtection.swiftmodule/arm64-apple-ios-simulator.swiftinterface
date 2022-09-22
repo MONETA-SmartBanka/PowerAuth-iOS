@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AppProtection
 @_exported import AppProtection
 import CommonCrypto
@@ -10,6 +10,7 @@ import MachO
 import Network
 import Swift
 import UIKit
+import _Concurrency
 public protocol AppProtectionRasp {
   func addDelegate(_ delegate: AppProtection.AppProtectionRaspDelegate)
   func removeDelegate(_ delegate: AppProtection.AppProtectionRaspDelegate)
@@ -34,6 +35,12 @@ public protocol AppProtectionRaspDelegate : AnyObject {
   func reverseEngineeringToolsDetected()
   func systemPasscodeConfigurationChanged(enabled: Swift.Bool)
   func systemBiometryConfigurationChanged(enabled: Swift.Bool)
+  var triggerOnAdd: Swift.Bool { get }
+}
+extension AppProtection.AppProtectionRaspDelegate {
+  public var triggerOnAdd: Swift.Bool {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class AppProtectionService {
   public var clientAppUserId: Swift.String? {
@@ -92,9 +99,8 @@ public struct AppProtectionRaspConfig {
   }
 }
 public struct AppProtectionEventConfig {
-  public init(enableEventCollection: Swift.Bool = true, enableAppLifecycleCollection: Swift.Bool = true, enableScreenshotTakenCollection: Swift.Bool = true)
+  public init(enableEventCollection: Swift.Bool = true, enableScreenshotTakenCollection: Swift.Bool = true)
   public let enableEventCollection: Swift.Bool
-  public let enableAppLifecycleCollection: Swift.Bool
   public let enableScreenshotTakenCollection: Swift.Bool
 }
 public typealias AppProtectionTrustedCert = AppProtection.AppProtectionRaspConfig.RepackageConfig.TrustedCertificate
@@ -125,7 +131,7 @@ public struct AppProtectionEvent : Swift.Equatable {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension EventData {
+extension AppProtection.EventData {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<AppProtection.EventData>
   @objc @NSManaged dynamic public var avuid: ObjectiveC.NSObject? {
     @objc get
@@ -152,7 +158,7 @@ extension EventData {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension FlagsData {
+extension AppProtection.FlagsData {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<AppProtection.FlagsData>
   @objc @NSManaged dynamic public var avUid: ObjectiveC.NSObject? {
     @objc get

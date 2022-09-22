@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AppProtection-Swift.h</key>
 		<data>
-		c8ShyP3YK5MV/bt6PzsRoeQX3/g=
+		VB/sxayFuZHH9e+DHn4v+YakN+s=
 		</data>
 		<key>Headers/AppProtection.h</key>
 		<data>
@@ -14,79 +14,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CqAnBvrCdVoRWiJNn36hZv1au6k=
+		J2/4iqsjdJvflxEABvqVXu3jcOY=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Apu+tpHo+P2gT7O17WPMszJbJrU=
+		fVGlptaxySAmQIds4vsVdycfBVU=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ci6xnpZOKNFpAWz8+bb9++E27GQ=
+		FGJRIuNChSo81nhe4X8PJcDzqkQ=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aqb+J8lENKRWwB7XPR+yt25jMtQ=
+		7TOwjorRLhGHPnJ3MWySFh71WUI=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Apu+tpHo+P2gT7O17WPMszJbJrU=
+		fVGlptaxySAmQIds4vsVdycfBVU=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		ci6xnpZOKNFpAWz8+bb9++E27GQ=
+		FGJRIuNChSo81nhe4X8PJcDzqkQ=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		aqb+J8lENKRWwB7XPR+yt25jMtQ=
+		7TOwjorRLhGHPnJ3MWySFh71WUI=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ymYOJXsnBZ0MIhBHUuvNdLyTS1g=
+		gnAbzJhMfBsdw7G+QRoE06oZxZ4=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cQO4+vrdczqtA6uMeTqyXIVfxho=
+		lixsJj4QrBLfpwKEJv6jy15uykc=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4WEMEw2GNojnSvNLzJqrlTfAcmI=
+		A+mte3e42/9kUC8havpPx9RIHSs=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/i386.swiftdoc</key>
 		<data>
-		ymYOJXsnBZ0MIhBHUuvNdLyTS1g=
+		gnAbzJhMfBsdw7G+QRoE06oZxZ4=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/i386.swiftinterface</key>
 		<data>
-		cQO4+vrdczqtA6uMeTqyXIVfxho=
+		lixsJj4QrBLfpwKEJv6jy15uykc=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/i386.swiftmodule</key>
 		<data>
-		4WEMEw2GNojnSvNLzJqrlTfAcmI=
+		A+mte3e42/9kUC8havpPx9RIHSs=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zTnxAsakDxThSEAN+DxxS2DlzCI=
+		Ylmi1yudlcbEWrcAMrQulR+iptk=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		k/wsV9tmdFteGrANBi/+gxhNwio=
+		C9JctvnhEL7YpisKzCXsJB7GbDc=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		puBR9kB/dnCSpoSTDKEWsKLoSi0=
+		iEHG1aLzxQhSGKk9CA8WqOBvgbM=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		zTnxAsakDxThSEAN+DxxS2DlzCI=
+		Ylmi1yudlcbEWrcAMrQulR+iptk=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		k/wsV9tmdFteGrANBi/+gxhNwio=
+		C9JctvnhEL7YpisKzCXsJB7GbDc=
 		</data>
 		<key>Modules/AppProtection.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		puBR9kB/dnCSpoSTDKEWsKLoSi0=
+		iEHG1aLzxQhSGKk9CA8WqOBvgbM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c8ShyP3YK5MV/bt6PzsRoeQX3/g=
+			VB/sxayFuZHH9e+DHn4v+YakN+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			90MaHrcKGjGuJ485BVpnATREL2mIlOnZYakPl8FafMc=
+			qx9CP9Ohigi3DYWr6GgPmVwTNyhfWZCKxbKY2YKJNpI=
 			</data>
 		</dict>
 		<key>Headers/AppProtection.h</key>
@@ -129,198 +129,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Apu+tpHo+P2gT7O17WPMszJbJrU=
+			fVGlptaxySAmQIds4vsVdycfBVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ovNgrU5ZkzkoIiQpO7WIvEdHWSVa+YOnHmB+RC91KGc=
+			ZUOD6w9aokoFvv/inZyWXnw5kDXTNygX0/oOn8o7la4=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ci6xnpZOKNFpAWz8+bb9++E27GQ=
+			FGJRIuNChSo81nhe4X8PJcDzqkQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			CivMFmCLB88RU/mD7ico1pA1QyA2MG6fw8VZgdYRJOA=
+			Zcd9BIgNYyA95CyOk3qzhiYOrYSlDRDMwtUI6eAu+fM=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aqb+J8lENKRWwB7XPR+yt25jMtQ=
+			7TOwjorRLhGHPnJ3MWySFh71WUI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ljZLK/6ko2p3mxvgkb4IVj+fpnypHSYsWG4TuYEGpfw=
+			p5mbA8pQGjNGPXJCG3l6c6HGvg0xz5YE57u4Nyg4YGs=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Apu+tpHo+P2gT7O17WPMszJbJrU=
+			fVGlptaxySAmQIds4vsVdycfBVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ovNgrU5ZkzkoIiQpO7WIvEdHWSVa+YOnHmB+RC91KGc=
+			ZUOD6w9aokoFvv/inZyWXnw5kDXTNygX0/oOn8o7la4=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ci6xnpZOKNFpAWz8+bb9++E27GQ=
+			FGJRIuNChSo81nhe4X8PJcDzqkQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			CivMFmCLB88RU/mD7ico1pA1QyA2MG6fw8VZgdYRJOA=
+			Zcd9BIgNYyA95CyOk3qzhiYOrYSlDRDMwtUI6eAu+fM=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aqb+J8lENKRWwB7XPR+yt25jMtQ=
+			7TOwjorRLhGHPnJ3MWySFh71WUI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ljZLK/6ko2p3mxvgkb4IVj+fpnypHSYsWG4TuYEGpfw=
+			p5mbA8pQGjNGPXJCG3l6c6HGvg0xz5YE57u4Nyg4YGs=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ymYOJXsnBZ0MIhBHUuvNdLyTS1g=
+			gnAbzJhMfBsdw7G+QRoE06oZxZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sNPA9XaLBz7SFx3k4y0S4l51iMFBKqI43321Sf38+7s=
+			53tr7u861iEZLjalnHJgd3E4TxYM0pi5xdBCiIT2wZo=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cQO4+vrdczqtA6uMeTqyXIVfxho=
+			lixsJj4QrBLfpwKEJv6jy15uykc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7sDPCQEREVQnyfJRDsSs9YB1mWWMcChhxXnPfnp553I=
+			Q4J/S9cFgdv3SmbSuBAxAUDy6cZqo7K1wu+pE87kf8s=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4WEMEw2GNojnSvNLzJqrlTfAcmI=
+			A+mte3e42/9kUC8havpPx9RIHSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			XtP+8u4H99QQOwoYwWg6Kgr3dcwURUzR2C0qoYBPHIA=
+			/Ry1JdaouZzhQBnjbPfNg31tIBneWPAxLMI/A0EBrTw=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ymYOJXsnBZ0MIhBHUuvNdLyTS1g=
+			gnAbzJhMfBsdw7G+QRoE06oZxZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sNPA9XaLBz7SFx3k4y0S4l51iMFBKqI43321Sf38+7s=
+			53tr7u861iEZLjalnHJgd3E4TxYM0pi5xdBCiIT2wZo=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cQO4+vrdczqtA6uMeTqyXIVfxho=
+			lixsJj4QrBLfpwKEJv6jy15uykc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7sDPCQEREVQnyfJRDsSs9YB1mWWMcChhxXnPfnp553I=
+			Q4J/S9cFgdv3SmbSuBAxAUDy6cZqo7K1wu+pE87kf8s=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4WEMEw2GNojnSvNLzJqrlTfAcmI=
+			A+mte3e42/9kUC8havpPx9RIHSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			XtP+8u4H99QQOwoYwWg6Kgr3dcwURUzR2C0qoYBPHIA=
+			/Ry1JdaouZzhQBnjbPfNg31tIBneWPAxLMI/A0EBrTw=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zTnxAsakDxThSEAN+DxxS2DlzCI=
+			Ylmi1yudlcbEWrcAMrQulR+iptk=
 			</data>
 			<key>hash2</key>
 			<data>
-			0OjZmWm94+Ho1IrIDWlLbZX1wR/hBeJnYJUiRiT98LU=
+			6FwavVtSKOHzrD5OcFaP77Q7Ta3C8ygc5uJV6iPAvbs=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k/wsV9tmdFteGrANBi/+gxhNwio=
+			C9JctvnhEL7YpisKzCXsJB7GbDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sqfkg18YLsRpIHIYKDU7QLL5rxvv4SaCcxJ5WjGpkDU=
+			UU8JRD9g6FkGND8TFc9ZJ1WUWA6BLlBmq9xhBPZtau8=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			puBR9kB/dnCSpoSTDKEWsKLoSi0=
+			iEHG1aLzxQhSGKk9CA8WqOBvgbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			X5CaA4Z8MWQqlGeLT65vVkXxblWH2YM6jMjDgUi99aM=
+			tu5JlKNJYQD0NjUg8lFnhnTJwzvx2yG2n05hj/3EIos=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zTnxAsakDxThSEAN+DxxS2DlzCI=
+			Ylmi1yudlcbEWrcAMrQulR+iptk=
 			</data>
 			<key>hash2</key>
 			<data>
-			0OjZmWm94+Ho1IrIDWlLbZX1wR/hBeJnYJUiRiT98LU=
+			6FwavVtSKOHzrD5OcFaP77Q7Ta3C8ygc5uJV6iPAvbs=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k/wsV9tmdFteGrANBi/+gxhNwio=
+			C9JctvnhEL7YpisKzCXsJB7GbDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sqfkg18YLsRpIHIYKDU7QLL5rxvv4SaCcxJ5WjGpkDU=
+			UU8JRD9g6FkGND8TFc9ZJ1WUWA6BLlBmq9xhBPZtau8=
 			</data>
 		</dict>
 		<key>Modules/AppProtection.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			puBR9kB/dnCSpoSTDKEWsKLoSi0=
+			iEHG1aLzxQhSGKk9CA8WqOBvgbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			X5CaA4Z8MWQqlGeLT65vVkXxblWH2YM6jMjDgUi99aM=
+			tu5JlKNJYQD0NjUg8lFnhnTJwzvx2yG2n05hj/3EIos=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
