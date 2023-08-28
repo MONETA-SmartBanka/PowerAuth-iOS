@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/PowerAuthCorePassword.h</key>
 		<data>
-		fZ+WsaeDXGg0Kz294rMzF1qgUrg=
+		02b/OR6rnH0PMJtSki+Y1VxJ/SI=
 		</data>
 		<key>Headers/PowerAuthCoreProtocolUpgradeData.h</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Headers/PowerAuthCoreTypes.h</key>
 		<data>
-		rNdU72GAWDB2Cif9zLhe5gOE+nk=
+		uVGrBTEkYfh97NtCnjQGmHnm5pk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VY2Hrc1pxhoPWk9bfNkZIyui4wg=
+		IzeB+Oc6RdRw4v/5WvGDKs3Jpms=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bKci08USxaCsO0DTcYHCTkLkmEKg5OUqF6Al8dRYm9w=
+			o5GqGTWDF/+fEIOoapsRLM+HlI7L0hRDpaAS9T2o070=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreProtocolUpgradeData.h</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TXRFLz2+HBaO6fFR0m3JhZamE1r0X20LdC81NXEx17g=
+			AufAZTkhWJBnwTe84HebbAz17oEOYmYo/DszY7uI09Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

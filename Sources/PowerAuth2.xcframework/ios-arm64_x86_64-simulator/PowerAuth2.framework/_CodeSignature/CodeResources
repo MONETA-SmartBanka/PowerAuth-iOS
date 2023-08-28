@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/PowerAuthActivationResult.h</key>
 		<data>
-		t/psm3Ihr46uFoPV39wFhlGl/N4=
+		fGd7kzUmSaVBfu0j+TEIBYHPaes=
 		</data>
 		<key>Headers/PowerAuthActivationStatus.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/PowerAuthConfiguration.h</key>
 		<data>
-		Yj8y91TabPAMvr40LR8CwEiSGjw=
+		82qedcHj3nlfV0tcI7KkTcwGTmo=
 		</data>
 		<key>Headers/PowerAuthCoreSessionProvider.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/PowerAuthErrorConstants.h</key>
 		<data>
-		HLOgTrVtVdTgYzaqyYi/tt6xtUk=
+		iYudyfnoir1C0DdmoL/W52+khJs=
 		</data>
 		<key>Headers/PowerAuthExternalPendingOperation.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/PowerAuthSDK.h</key>
 		<data>
-		51zSZ7JxJFzAYkYb2RpO2/s3kJM=
+		SOELnLe4G758v/DBNHPslT8x21g=
 		</data>
 		<key>Headers/PowerAuthSessionStatusProvider.h</key>
 		<data>
@@ -128,13 +128,17 @@
 		<data>
 		GwQxhnRCd3gQePL9Ublebr+4lNE=
 		</data>
+		<key>Headers/PowerAuthUserInfo.h</key>
+		<data>
+		4nmIhjhcJMgg6NIPTwB0NbU7W8E=
+		</data>
 		<key>Headers/PowerAuthWCSessionManager.h</key>
 		<data>
 		yuwB7kMmnUejZH4/nkpiXJD2yNA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+UGwVR66R91VvGdwe7IyCsvagJ4=
+		HG6hJUmLgPjk7RXqWUXBLf1d6YY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -175,7 +179,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gBKdZ4Rm2NfmIOjnj0A2sf4zssQa1imW++k73UnVuQQ=
+			5Qvx0eUKulm3VUP/OYFm1ZV1nTIs9yvO8rBAw318fkY=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthActivationStatus.h</key>
@@ -224,7 +228,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JSXlMsjlH25OjyEtRYek1ADu0par7nZkWFvGimwoEuw=
+			+xoE+aQSyOqUkdrUJ2VnXnDxiavYJLhHWrV3aLdOEcE=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreSessionProvider.h</key>
@@ -252,7 +256,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			id4at1a8TzxTKkBWftnPdyclotDMdmBva8c3P4dHKeA=
+			EB++5BkF3esYylQWgbZ3fl2OBy63ssyrvqPJX75TPsY=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthExternalPendingOperation.h</key>
@@ -322,7 +326,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LMtrri9d38FI+VGqTiJgX79FVZJiczB7R7X+Vxj187o=
+			tjmi5qS/l37I1cz6dt2s5Htl/9F0ZN5RQllKiszC6FY=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthSessionStatusProvider.h</key>
@@ -358,6 +362,13 @@
 			<key>hash2</key>
 			<data>
 			dVy0w+xszmZAwi1HrfbxSlfm/nGTdYVl+qrdhX08fP4=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthUserInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mODuBwRTwskVWBgV/63tQnS8E8/PxezoSuc26Tmit2w=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthWCSessionManager.h</key>

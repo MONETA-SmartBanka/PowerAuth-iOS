@@ -28,6 +28,7 @@
 #import <PowerAuth2/PowerAuthCoreSessionProvider.h>
 #import <PowerAuth2/PowerAuthOperationTask.h>
 #import <PowerAuth2/PowerAuthExternalPendingOperation.h>
+#import <PowerAuth2/PowerAuthUserInfo.h>
 
 // Deprecated
 #import <PowerAuth2/PowerAuthDeprecated.h>
@@ -517,7 +518,8 @@
  */
 - (void) authenticateUsingBiometryWithPrompt:(nonnull NSString *)prompt
                                     callback:(nonnull void(^)(PowerAuthAuthentication * _Nullable authentication, NSError * _Nullable error))callback
-                                NS_SWIFT_NAME(authenticateUsingBiometry(withPrompt:callback:));
+                                NS_SWIFT_NAME(authenticateUsingBiometry(withPrompt:callback:))
+                                API_UNAVAILABLE(tvos);
 
 /** Prepare PowerAuthAuthentication object for future PowerAuth signature calculation with a biometry and possession factors involved.
  
@@ -539,7 +541,8 @@
  */
 - (void) unlockBiometryKeysWithPrompt:(nonnull NSString*)prompt
                             withBlock:(nonnull void(^)(NSDictionary<NSString*, NSData*> * _Nullable keys, BOOL userCanceled))block
-                         NS_SWIFT_NAME(unlockBiometryKeys(withPrompt:callback:));
+                         NS_SWIFT_NAME(unlockBiometryKeys(withPrompt:callback:))
+                         API_UNAVAILABLE(tvos);
 
 /** Unlock all keys stored in a biometry related keychain and keeps them cached for the scope of the block.
  
@@ -784,5 +787,25 @@
  activation must be present and EEK must be set at the time of call (e.g. 'hasExternalEncryptionKey' returns true).
  */
 - (BOOL) removeExternalEncryptionKey:(NSError * _Nullable * _Nullable)error;
+
+@end
+
+#pragma mark - User Info
+
+@interface PowerAuthSDK (UserInfo)
+
+/**
+ Contains last properly fetched instance of `PowerAuthUserInfo` object. The value is updated during the activation process
+ or by calling `fetchUserInfo()` function.
+ */
+@property (nonatomic, readonly, nullable) PowerAuthUserInfo * lastFetchedUserInfo;
+
+/**
+ Fetch information about the user from the server. If operation succeed, then the user information object is also stored to `lastFetchedUserInfo` property.
+ @param callback The callback method with an user info data.
+ @return PowerAuthOperationTask associated with the running request.
+ */
+- (nullable id<PowerAuthOperationTask>) fetchUserInfo:(nonnull void(^)(PowerAuthUserInfo * _Nullable userInfo, NSError * _Nullable error))callback
+                        NS_SWIFT_NAME(fetchUserInfo(callback:));
 
 @end

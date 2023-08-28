@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/PowerAuthErrorConstants.h</key>
 		<data>
-		4WG8zIC8Fl9cWj9iLsVwgbJkuRo=
+		5whvmGOeha0DShruzVPZ7HvAGLE=
 		</data>
 		<key>Headers/PowerAuthKeychain.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ok1576+5YBNcpk/c7umhQjgcKYk=
+		y4Rt/nVqXw+d2IPpUcnZo/ULpvg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -146,11 +146,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4WG8zIC8Fl9cWj9iLsVwgbJkuRo=
+			5whvmGOeha0DShruzVPZ7HvAGLE=
 			</data>
 			<key>hash2</key>
 			<data>
-			o3N0AQ9dATWFqxmZqMX9gy7z0lawJbVIIveKn4kLYFs=
+			hAqEH2/lq4oqZLzQG8rv/chFMc81IHOkWNiNBazcLCo=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthKeychain.h</key>
