@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WultraSSLPinning-Swift.h</key>
 		<data>
-		tTWDXLQj3+EUdzfr4z+/+EcHqdk=
+		xTdQOSJz1XfM9FBwvB/liWe9PeQ=
 		</data>
 		<key>Headers/WultraSSLPinning.h</key>
 		<data>
@@ -14,72 +14,64 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YR3jGM9ipro0HZIAHsngvDwCQ6s=
+		n60fzK1Lv5qE3V5NQK/FDLERoPM=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ixh+PxWB7Iq3NIiYshkDA6syZTI=
+		Ww1wzRNDr8+fQ6AacI0Rhiu3e7g=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0JK5YHP1TGtOmfDXCDuGQLDP9dY=
+		5VfzsQ0np8MMNN6MKwAOUs5fZ5k=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RWgf8glh9txxp6kpTboSOYH7ccA=
+		v02JWJMa2jfucjs2cKMqvepI/+g=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0JK5YHP1TGtOmfDXCDuGQLDP9dY=
+		5VfzsQ0np8MMNN6MKwAOUs5fZ5k=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LdGGuh/1f8hJoi+6V1qoQ8s1Y8Q=
+		AMtlhkeYuaJp6XbXcp04a7sVG6Q=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ixh+PxWB7Iq3NIiYshkDA6syZTI=
+		Ww1wzRNDr8+fQ6AacI0Rhiu3e7g=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nMXhQ+XFA7BY4I6N8QUCzKEM+x8=
+		RErm0rzo9RmJT/6Y9t5pKPPSUPo=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QagRxRAwtKNPZhjXZsd8QwENK/Q=
+		lsHEmLgo9rOmHNC8mBijxzx4tRY=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nMXhQ+XFA7BY4I6N8QUCzKEM+x8=
+		RErm0rzo9RmJT/6Y9t5pKPPSUPo=
 		</data>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aLf6Dgf4o4hIzILJbrnWAOQbZW8=
+		4UCp+ZlGy67i2MKUyYcO5Dmtnnc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		hxvv86vlNDyLqToDIljVYonedpU=
+		BUHSulURtrc+nAHKquYzudsXrF4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/WultraSSLPinning-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tTWDXLQj3+EUdzfr4z+/+EcHqdk=
-			</data>
 			<key>hash2</key>
 			<data>
-			yBbK4altyz3b/4e7y8MBySjuzKU28A/GAU2VIcK2Hys=
+			bD/Xfw7bFB7EBdjbjqe0fb/AtRcQFFy8hiaodObsZZs=
 			</data>
 		</dict>
 		<key>Headers/WultraSSLPinning.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gxep2xFuHDqU8534RhcM4rtt6UY=
-			</data>
 			<key>hash2</key>
 			<data>
 			TkESS5yxvNHSnfrcRP45OfvpNkcJn0gSRiozoBNBN+w=
@@ -87,123 +79,79 @@
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ixh+PxWB7Iq3NIiYshkDA6syZTI=
-			</data>
 			<key>hash2</key>
 			<data>
-			cBfws6qT+4BYada6fqHVFEPqgHa6c7yt+r3+ST9Avcc=
+			0+p2YBQF9SgskWSLIS/yul/hF/uOr9X80OQk/CYgYU0=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0JK5YHP1TGtOmfDXCDuGQLDP9dY=
-			</data>
 			<key>hash2</key>
 			<data>
-			5kCXZAgB3kV5PxqXRUs6/IO8Ck6q6EIhB4TYhyk4kNo=
+			fPApag8iZIONhod2sY3hgijRaNaM3kT+w3LLpYDFQRs=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RWgf8glh9txxp6kpTboSOYH7ccA=
-			</data>
 			<key>hash2</key>
 			<data>
-			4Q7jGTXnRWoLPoVKhU7Vuh2o45FELjZsqKyF0iwF7cc=
+			GeU3w3rdmvymcrls386WMcVXFa4yH/BtAwL6LQVcKM8=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0JK5YHP1TGtOmfDXCDuGQLDP9dY=
-			</data>
 			<key>hash2</key>
 			<data>
-			5kCXZAgB3kV5PxqXRUs6/IO8Ck6q6EIhB4TYhyk4kNo=
+			fPApag8iZIONhod2sY3hgijRaNaM3kT+w3LLpYDFQRs=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LdGGuh/1f8hJoi+6V1qoQ8s1Y8Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			MOuKvlBHc93wrt98StWzT/9MTEnVDXb25nMajHw8o+c=
+			aHQhJkkHvrTuWA2cUocaXiL4Bh3iOnKqGZhYNXwR/0c=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ixh+PxWB7Iq3NIiYshkDA6syZTI=
-			</data>
 			<key>hash2</key>
 			<data>
-			cBfws6qT+4BYada6fqHVFEPqgHa6c7yt+r3+ST9Avcc=
+			0+p2YBQF9SgskWSLIS/yul/hF/uOr9X80OQk/CYgYU0=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nMXhQ+XFA7BY4I6N8QUCzKEM+x8=
-			</data>
 			<key>hash2</key>
 			<data>
-			RfVvCnSP7bFgCEWPBi6NhfDc5SHsBGqcdlozZNAdiZE=
+			ZNcST7SDFeT5WLjnat3512LTH/x4yWoKjiFrNBdlym8=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QagRxRAwtKNPZhjXZsd8QwENK/Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			6ToQqcrNEI7VMPHEmxHQO0w8L6xu9J4Nr/5BUIziyiA=
+			AQFV2YYyXCCaly4k4TOmPBbSf+wjQB9Nqyw0wSuhoSI=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nMXhQ+XFA7BY4I6N8QUCzKEM+x8=
-			</data>
 			<key>hash2</key>
 			<data>
-			RfVvCnSP7bFgCEWPBi6NhfDc5SHsBGqcdlozZNAdiZE=
+			ZNcST7SDFeT5WLjnat3512LTH/x4yWoKjiFrNBdlym8=
 			</data>
 		</dict>
 		<key>Modules/WultraSSLPinning.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aLf6Dgf4o4hIzILJbrnWAOQbZW8=
-			</data>
 			<key>hash2</key>
 			<data>
-			x10XMh7tayyHJ8DJNmIckrk0NgfLGpyPJImF8GDoyRM=
+			357hU4H0NrtHxPUUfgCsDPDNZZfTLJNtM3GqtjnL6u4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hxvv86vlNDyLqToDIljVYonedpU=
-			</data>
 			<key>hash2</key>
 			<data>
-			xaWmXT0b7ImX8vvda+sIQRVi061DO3s+CBxO5bRy/HA=
+			YHvNf8Axn+bXkUneVreVmpsC7v1swefPRGRlqILw0Y4=
 			</data>
 		</dict>
 	</dict>

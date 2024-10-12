@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/PowerAuthLog.h</key>
 		<data>
-		pUZCnhOv66p5gEkYjxTD8ybfIIc=
+		tjV+CizPtAcQ5OxQze4qfLnV8vI=
 		</data>
 		<key>Headers/PowerAuthMacros.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Headers/PowerAuthUserInfo.h</key>
 		<data>
-		4nmIhjhcJMgg6NIPTwB0NbU7W8E=
+		R9tJYRukhom+XE2A16H5HucfQsw=
 		</data>
 		<key>Headers/PowerAuthWCSessionManager.h</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HG6hJUmLgPjk7RXqWUXBLf1d6YY=
+		eu/7XXImLguNqGTHddWEpXsaIlg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -291,7 +291,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			99H5dGuDyRGuws0HmhPbJRKPlammUgArKC7IqnWhkF8=
+			bP72LJABkiFpR2eIm84W10ILzGPas9t8gHKyJD9U7y0=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthMacros.h</key>
@@ -368,7 +368,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mODuBwRTwskVWBgV/63tQnS8E8/PxezoSuc26Tmit2w=
+			YOGLcq9oWILmBuW1lnbIApydfR+xH61981iJDLTt5Eo=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthWCSessionManager.h</key>

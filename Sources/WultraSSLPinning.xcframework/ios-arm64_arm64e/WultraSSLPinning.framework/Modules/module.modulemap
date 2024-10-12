@@ -1,7 +1,7 @@
 framework module WultraSSLPinning {
   umbrella header "WultraSSLPinning.h"
-
   export *
+
   module * { export * }
 }
 

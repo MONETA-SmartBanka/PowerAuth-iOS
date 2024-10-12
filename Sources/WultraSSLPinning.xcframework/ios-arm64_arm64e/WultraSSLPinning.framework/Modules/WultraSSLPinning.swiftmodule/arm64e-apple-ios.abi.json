@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "WultraSSLPinning",
+    "printedName": "WultraSSLPinning",
     "children": [
       {
         "kind": "Import",
@@ -146,6 +146,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -355,6 +371,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -642,6 +672,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "SecureDataStore",
@@ -1258,6 +1302,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1453,6 +1513,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1502,13 +1576,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "CryptoProvider",
-                "printedName": "WultraSSLPinning.CryptoProvider",
+                "printedName": "any WultraSSLPinning.CryptoProvider",
                 "usr": "s:16WultraSSLPinning14CryptoProviderP"
               },
               {
                 "kind": "TypeNominal",
                 "name": "SecureDataStore",
-                "printedName": "WultraSSLPinning.SecureDataStore",
+                "printedName": "any WultraSSLPinning.SecureDataStore",
                 "usr": "s:16WultraSSLPinning15SecureDataStoreP"
               }
             ],
@@ -1641,7 +1715,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "PowerAuthClientSslValidationStrategy",
-                "printedName": "PowerAuth2.PowerAuthClientSslValidationStrategy",
+                "printedName": "any PowerAuth2.PowerAuthClientSslValidationStrategy",
                 "usr": "c:objc(pl)PowerAuthClientSslValidationStrategy"
               }
             ],
@@ -1916,6 +1990,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -2219,6 +2307,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -2548,6 +2650,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -2589,7 +2705,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(WultraSSLPinning.CertStore.UpdateResult, Swift.Error?) -> ()",
+                "printedName": "(WultraSSLPinning.CertStore.UpdateResult, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2599,7 +2715,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(WultraSSLPinning.CertStore.UpdateResult, Swift.Error?)",
+                    "printedName": "(WultraSSLPinning.CertStore.UpdateResult, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2610,12 +2726,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -2645,7 +2761,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2910,6 +3042,20 @@
             ],
             "enumRawTypeName": "Int",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -3235,7 +3381,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3292,7 +3454,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ECPublicKey",
-                "printedName": "WultraSSLPinning.ECPublicKey",
+                "printedName": "any WultraSSLPinning.ECPublicKey",
                 "usr": "s:16WultraSSLPinning11ECPublicKeyP"
               }
             ],
@@ -3317,12 +3479,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WultraSSLPinning.ECPublicKey?",
+                "printedName": "(any WultraSSLPinning.ECPublicKey)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "ECPublicKey",
-                    "printedName": "WultraSSLPinning.ECPublicKey",
+                    "printedName": "any WultraSSLPinning.ECPublicKey",
                     "usr": "s:16WultraSSLPinning11ECPublicKeyP"
                   }
                 ],
@@ -3420,6 +3582,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3525,6 +3703,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3540,6 +3734,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3556,16 +3766,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WultraSSLPinning",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PowerAuth2",
-        "printedName": "PowerAuth2",
         "declKind": "Import",
         "moduleName": "WultraSSLPinning",
         "declAttributes": [
@@ -3577,7 +3777,10 @@
         "name": "PowerAuthCore",
         "printedName": "PowerAuthCore",
         "declKind": "Import",
-        "moduleName": "WultraSSLPinning"
+        "moduleName": "WultraSSLPinning",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -3626,7 +3829,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ECPublicKey",
-                "printedName": "WultraSSLPinning.ECPublicKey",
+                "printedName": "any WultraSSLPinning.ECPublicKey",
                 "usr": "s:16WultraSSLPinning11ECPublicKeyP"
               }
             ],
@@ -3648,12 +3851,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WultraSSLPinning.ECPublicKey?",
+                "printedName": "(any WultraSSLPinning.ECPublicKey)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "ECPublicKey",
-                    "printedName": "WultraSSLPinning.ECPublicKey",
+                    "printedName": "any WultraSSLPinning.ECPublicKey",
                     "usr": "s:16WultraSSLPinning11ECPublicKeyP"
                   }
                 ],
@@ -3741,6 +3944,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CryptoProvider",
             "printedName": "CryptoProvider",
             "usr": "s:16WultraSSLPinning14CryptoProviderP",
@@ -3788,6 +4005,34 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3851,252 +4096,231 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Plugins\/PowerAuth\/PowerAuthIntegration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
-      "offset": 3934,
-      "length": 37,
-      "value": "\"WultraSSLPinning.PowerAuthSslPinningValidationStrategy\""
+      "offset": 2221,
+      "length": 18,
+      "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
-      "offset": 768,
-      "length": 7,
-      "value": "\"WultraSSLPinning.RestAPI\""
+      "offset": 2261,
+      "length": 8,
+      "value": "\"Accept\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CertificateInfo.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 2448,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 2905,
+      "length": 32,
+      "value": "\"Invalid HTTPURLResponse object\""
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "Dictionary",
+      "offset": 2958,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3150,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3157,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 3199,
+      "length": 62,
+      "value": "\"RestAPI: HTTP request failed with status code: \""
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 3260,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 3502,
+      "length": 51,
+      "value": "\"RestAPI: HTTP request failed with error: \""
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 3552,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 3865,
+      "length": 53,
+      "value": "\"RestAPI: HTTP request finished with empty response.\""
+    },
+    {
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 3,
       "value": "\"n\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CertificateInfo.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
       "kind": "StringLiteral",
       "offset": 1226,
       "length": 3,
       "value": "\"f\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CertificateInfo.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
       "kind": "StringLiteral",
       "offset": 1253,
       "length": 3,
       "value": "\"e\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CertificateInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1195,
-      "length": 3,
-      "value": "\"n\""
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CertificateInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1226,
-      "length": 3,
-      "value": "\"f\""
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CertificateInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1253,
-      "length": 3,
-      "value": "\"e\""
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Plugins\/PowerAuth\/PowerAuthSecureDataStore.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Plugins\/PowerAuth\/PowerAuthSecureDataStore.swift",
       "kind": "StringLiteral",
       "offset": 1092,
       "length": 28,
       "value": "\"com.wultra.WultraCertStore\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4233,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4415,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4417,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4420,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4423,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4476,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4479,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4482,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4485,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStore.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStore.swift",
       "kind": "IntegerLiteral",
       "offset": 3438,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/CertStore.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStore.swift",
       "kind": "BooleanLiteral",
       "offset": 3482,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1106,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1192,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1288,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1372,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1106,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1192,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1288,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1372,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1106,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1192,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1288,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Service\/WultraDebug.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1372,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CachedData.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CachedData.swift",
       "kind": "StringLiteral",
       "offset": 1073,
       "length": 3,
       "value": "\"c\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CachedData.swift",
-      "kind": "StringLiteral",
-      "offset": 1103,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CachedData.swift",
-      "kind": "StringLiteral",
-      "offset": 1073,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Source\/Lib\/Model\/CachedData.swift",
+      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CachedData.swift",
       "kind": "StringLiteral",
       "offset": 1103,
       "length": 3,
