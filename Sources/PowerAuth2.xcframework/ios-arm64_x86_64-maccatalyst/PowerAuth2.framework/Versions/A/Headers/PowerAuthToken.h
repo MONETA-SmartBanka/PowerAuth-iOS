@@ -136,16 +136,6 @@
                                                        completion:(nonnull void(^)(BOOL removed, NSError * _Nullable error))completion;
 
 /**
- Cancels previously created store task. Note that cancelling may lead to inconsistent state,
- when the server will execute the operation but client application will not get the result.
- 
- It is safe to call this method with nil task.
- 
- This method is deprecated, because now you can call cancel directly on object returned from the asynchronous method.
- */
-- (void) cancelTask:(nullable id)task PA2_DEPRECATED(1.7.0);
-
-/**
  Removes token with given name from the local database. Be aware that this operation doesn't invalidate
  token on the server, it will only remove data associated to the token from the local database. It is recommended
  to use this method only as a fallback when online removal fails and you don't need to cary about existence
@@ -170,5 +160,13 @@
  Returns token object with given name if it's alreadu in local database or nil.
  */
 - (nullable PowerAuthToken*) localTokenWithName:(nonnull NSString*)name;
+
+/**
+ Generate authorization header with token with given name. Unlike `PowerAuthToken.generateHeader()`, this
+ asynchronous function guarantees that time used for the token digest calculation is always synchronized
+ with the server.
+ */
+- (nullable id<PowerAuthOperationTask>) generateAuthorizationHeaderWithName:(nonnull NSString *)name
+                                                                 completion:(nonnull void(^)(PowerAuthAuthorizationHttpHeader * _Nullable header, NSError * _Nullable error))completion;
 
 @end

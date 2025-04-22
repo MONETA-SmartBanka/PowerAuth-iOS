@@ -17,6 +17,7 @@
 #import <PowerAuthCore/PowerAuthCoreTypes.h>
 #import <PowerAuthCore/PowerAuthCoreProtocolUpgradeData.h>
 #import <PowerAuthCore/PowerAuthCoreDebugMonitor.h>
+#import <PowerAuthCore/PowerAuthCoreTimeService.h>
 
 /**
  The `PowerAuthCoreSession` provides Objective-C interface to the low-level
@@ -27,9 +28,11 @@
 #pragma mark -  Initialization / Reset
 
 /**
- The designated initializer. You have to provide a valid PowerAuthCoreSessionSetup object.
+ The designated initializer. You have to provide a valid PowerAuthCoreSessionSetup object
+ and time synchronization service implementation.
  */
-- (nullable instancetype) initWithSessionSetup:(nonnull PowerAuthCoreSessionSetup *)setup;
+- (nullable instancetype) initWithSessionSetup:(nonnull PowerAuthCoreSessionSetup *)setup
+                                   timeService:(nonnull id<PowerAuthCoreTimeService>)timeService;
 
 /**
  Resets session into its initial state. The existing session's setup and EEK is preserved
@@ -55,16 +58,19 @@
 @property (nonatomic, weak, nullable) id<PowerAuthCoreDebugMonitor> debugMonitor;
 
 /**
- Returns pointer to an internal SessionSetup object. Returns nil if
- session has no valid setup.
- 
- Note that internal implementation always creates a new instance of PowerAuthCoreSessionSetup object.
- If you want to get just a sessionIdentifier, then you can use the dedicated read only
- property, which is much faster than accessing the whole setup object.
+ Returns pointer to an internal SessionSetup object.
  
  This property doesn't use shared data, so no exclusive access is required.
  */
 @property (nonatomic, strong, readonly, nullable) PowerAuthCoreSessionSetup * sessionSetup;
+
+/**
+ Contains `APPLICATION_KEY` extracted from the SessionSetup object. Returns nil if
+ session has no valid setup.
+ 
+ This property doesn't use shared data, so no exclusive access is required.
+ */
+@property (nonatomic, strong, readonly, nullable) NSString * applicationKey;
 
 /**
  Returns value of [self sessionSetup].sessionIdentifier if the setup object is present or 0 if not.
@@ -433,7 +439,8 @@
  */
 - (nullable NSData*) signDataWithDevicePrivateKey:(nonnull NSString*)cVaultKey
                                              keys:(nonnull PowerAuthCoreSignatureUnlockKeys*)unlockKeys
-                                             data:(nonnull NSData*)data;
+                                             data:(nonnull NSData*)data
+                                           format:(PowerAuthCoreSignatureFormat)format;
 
 #pragma mark - External Encryption Key
 
@@ -596,7 +603,7 @@
 
 /**
  Returns textual representation for given protocol version. For example, for `PowerAuthCoreProtocolVersion_V3`
- returns "3.1". You can use `PowerAuthCoreProtocolVersion_NA` to get the lastest supported version.
+ returns "3.2". You can use `PowerAuthCoreProtocolVersion_NA` to get the lastest supported version.
  */
 + (nonnull NSString*) maxSupportedHttpProtocolVersion:(PowerAuthCoreProtocolVersion)protocolVersion;
 

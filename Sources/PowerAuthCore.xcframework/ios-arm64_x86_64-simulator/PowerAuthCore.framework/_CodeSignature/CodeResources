@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PowerAuthCore.h</key>
 		<data>
-		tMcD6QMrkTY8LobiaNc5Tb+UrBc=
+		aUJNVuuq9UsncumHRrEyxcWjleg=
 		</data>
 		<key>Headers/PowerAuthCoreCryptoUtils.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/PowerAuthCoreEciesEncryptor.h</key>
 		<data>
-		Ui+UOajTsBc9svo6741mlbBNdMk=
+		kbVAxE5j/lokAJ7iw2by3H4t25I=
 		</data>
 		<key>Headers/PowerAuthCoreLog.h</key>
 		<data>
@@ -46,15 +46,19 @@
 		</data>
 		<key>Headers/PowerAuthCoreSession.h</key>
 		<data>
-		m2NFKJ5OD0tCKqOwolEpuC7N3cY=
+		3Hh9GYzeU7VxhcFtgAz7QBFSevg=
+		</data>
+		<key>Headers/PowerAuthCoreTimeService.h</key>
+		<data>
+		qj2MiDWVCPo5Y9Nj7SDqsv8EULM=
 		</data>
 		<key>Headers/PowerAuthCoreTypes.h</key>
 		<data>
-		uVGrBTEkYfh97NtCnjQGmHnm5pk=
+		05SxgqupAov65FB4amwnwkVGWcI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ccaUqpht4zTc5CJoQtwTWa9k01E=
+		UuShtp7zzZvqQ1z2hCx0ocT+Xi4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fAejQG5hcIy+XblAUUogOz5fGCTs/ynEm2beoOPU68o=
+			TkSQiE5CMHP4hM0fWERzMsZp/rjCh3AJAWunXS3/9Vw=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreCryptoUtils.h</key>
@@ -95,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bvrKiDUaueioTjWdph/BsmdOvNjeReMcVkRqgwobTTc=
+			Dumy+MWbB5sObX3e7uTc9y4D4G1lSkaCL+iSibYBly8=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreLog.h</key>
@@ -137,14 +141,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KFcfW+x3PiMRIUkQcZg8/071txWJ7OobMXFETyVMld4=
+			K+OTAFvkn3Jw4uhvLPmr1Lu7eQMm9t+QhKCbhX36aPk=
+			</data>
+		</dict>
+		<key>Headers/PowerAuthCoreTimeService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			24WJlunPAgxgheb9gDGyMVxudDAzcOwv0YTrBZxSi8w=
 			</data>
 		</dict>
 		<key>Headers/PowerAuthCoreTypes.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AufAZTkhWJBnwTe84HebbAz17oEOYmYo/DszY7uI09Q=
+			WV16Mmx7XU78YO/Ni6XNm8JFlWGM1mfS0FwxVqF2024=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

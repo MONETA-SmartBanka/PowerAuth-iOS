@@ -1,10 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WultraSSLPinning
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WultraSSLPinning
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CryptoKit
 import Foundation
 import PowerAuth2
 import PowerAuthCore
+import Security
 import Swift
 @_exported import WultraSSLPinning
 import _Concurrency
@@ -17,22 +19,36 @@ public protocol SecureDataStore : AnyObject {
   func removeData(forKey key: Swift.String)
 }
 extension WultraSSLPinning.CertStore {
+  @available(*, deprecated, message: "This method will be removed in the future. Please use your own implementation.")
   public func powerAuthSslValidationStrategy() -> any PowerAuth2.PowerAuthClientSslValidationStrategy
+  @available(*, deprecated, message: "Use direct CertStore initializer with the default parameters instead. PowerAuthCryptoProvider and PowerAuthSecureDataStore will be removed in future.")
   public static func powerAuthCertStore(configuration: WultraSSLPinning.CertStoreConfiguration) -> WultraSSLPinning.CertStore
 }
-@objc public class PowerAuthSslPinningValidationStrategy : ObjectiveC.NSObject, PowerAuth2.PowerAuthClientSslValidationStrategy {
+@objc @available(*, deprecated, message: "This class will be removed in the future. Please use your own implementation.")
+public class PowerAuthSslPinningValidationStrategy : ObjectiveC.NSObject, PowerAuth2.PowerAuthClientSslValidationStrategy {
   final public let certStore: WultraSSLPinning.CertStore
   public init(certStore: WultraSSLPinning.CertStore)
   @objc public func validateSsl(for session: Foundation.URLSession, challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc deinit
 }
+@available(*, deprecated, message: "Use KeychainSecureDataStore instead with the same keychainIdentifier and accessGroup. This class will be removed in the future.")
 public class PowerAuthSecureDataStore : WultraSSLPinning.SecureDataStore {
-  public static let defaultKeychainIdentifier: Swift.String
-  public init(keychainIdentifier: Swift.String = PowerAuthSecureDataStore.defaultKeychainIdentifier, accessGroup: Swift.String? = nil)
+  public init(keychainIdentifier: Swift.String = KeychainSecureDataStore.defaultKeychainIdentifier, accessGroup: Swift.String? = nil)
   public func save(data: Foundation.Data, forKey key: Swift.String) -> Swift.Bool
   public func loadData(forKey key: Swift.String) -> Foundation.Data?
   public func removeData(forKey key: Swift.String)
   @objc deinit
+}
+public class CryptoKitCryptoProvider : WultraSSLPinning.CryptoProvider {
+  public init()
+  public func ecdsaValidateSignatures(signedData: WultraSSLPinning.SignedData, publicKey: any WultraSSLPinning.ECPublicKey) -> Swift.Bool
+  public func hashSha256(data: Foundation.Data) -> Foundation.Data
+  public func getRandomData(length: Swift.Int) -> Foundation.Data
+  public func importECPublicKey(publicKey: Foundation.Data) -> (any WultraSSLPinning.ECPublicKey)?
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension CryptoKit.P256.Signing.PublicKey : WultraSSLPinning.ECPublicKey {
 }
 public struct CertStoreConfiguration {
   public let serviceUrl: Foundation.URL
@@ -55,8 +71,17 @@ public enum SSLValidationStrategy {
     get
   }
 }
+public class KeychainSecureDataStore : WultraSSLPinning.SecureDataStore {
+  final public let accessGroup: Swift.String?
+  public static let defaultKeychainIdentifier: Swift.String
+  public init(keychainIdentifier: Swift.String = KeychainSecureDataStore.defaultKeychainIdentifier, accessGroup: Swift.String? = nil)
+  public func save(data: Foundation.Data, forKey key: Swift.String) -> Swift.Bool
+  public func loadData(forKey key: Swift.String) -> Foundation.Data?
+  public func removeData(forKey key: Swift.String)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class CertStore {
-  public init(configuration: WultraSSLPinning.CertStoreConfiguration, cryptoProvider: any WultraSSLPinning.CryptoProvider, secureDataStore: any WultraSSLPinning.SecureDataStore)
+  public init(configuration: WultraSSLPinning.CertStoreConfiguration, cryptoProvider: any WultraSSLPinning.CryptoProvider = CryptoKitCryptoProvider(), secureDataStore: any WultraSSLPinning.SecureDataStore = KeychainSecureDataStore())
   public var instanceIdentifier: Swift.String {
     get
   }
@@ -132,8 +157,9 @@ public struct SignedData {
   public let data: Foundation.Data
   public let signature: Foundation.Data
 }
-public protocol ECPublicKey : AnyObject {
+public protocol ECPublicKey {
 }
+@available(*, deprecated, message: "Use CryptoKitCryptoProvider instead. This class will be removed in the future.")
 public class PowerAuthCryptoProvider : WultraSSLPinning.CryptoProvider {
   public init()
   public func ecdsaValidateSignatures(signedData: WultraSSLPinning.SignedData, publicKey: any WultraSSLPinning.ECPublicKey) -> Swift.Bool

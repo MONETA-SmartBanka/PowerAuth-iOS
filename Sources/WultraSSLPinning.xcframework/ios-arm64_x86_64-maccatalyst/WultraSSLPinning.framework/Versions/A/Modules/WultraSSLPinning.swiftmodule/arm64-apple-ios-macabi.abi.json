@@ -361,8 +361,10 @@
         "usr": "c:@M@WultraSSLPinning@objc(cs)PowerAuthSslPinningValidationStrategy",
         "mangledName": "$s16WultraSSLPinning37PowerAuthSslPinningValidationStrategyC",
         "moduleName": "WultraSSLPinning",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment",
           "ObjC"
         ],
@@ -471,58 +473,6 @@
         "name": "PowerAuthSecureDataStore",
         "printedName": "PowerAuthSecureDataStore",
         "children": [
-          {
-            "kind": "Var",
-            "name": "defaultKeychainIdentifier",
-            "printedName": "defaultKeychainIdentifier",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16WultraSSLPinning24PowerAuthSecureDataStoreC25defaultKeychainIdentifierSSvpZ",
-            "mangledName": "$s16WultraSSLPinning24PowerAuthSecureDataStoreC25defaultKeychainIdentifierSSvpZ",
-            "moduleName": "WultraSSLPinning",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16WultraSSLPinning24PowerAuthSecureDataStoreC25defaultKeychainIdentifierSSvgZ",
-                "mangledName": "$s16WultraSSLPinning24PowerAuthSecureDataStoreC25defaultKeychainIdentifierSSvgZ",
-                "moduleName": "WultraSSLPinning",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -667,8 +617,10 @@
         "usr": "s:16WultraSSLPinning24PowerAuthSecureDataStoreC",
         "mangledName": "$s16WultraSSLPinning24PowerAuthSecureDataStoreC",
         "moduleName": "WultraSSLPinning",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -692,6 +644,209 @@
             "printedName": "SecureDataStore",
             "usr": "s:16WultraSSLPinning15SecureDataStoreP",
             "mangledName": "$s16WultraSSLPinning15SecureDataStoreP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WultraSSLPinning",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "WultraSSLPinning"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CryptoKitCryptoProvider",
+        "printedName": "CryptoKitCryptoProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CryptoKitCryptoProvider",
+                "printedName": "WultraSSLPinning.CryptoKitCryptoProvider",
+                "usr": "s:16WultraSSLPinning09CryptoKitC8ProviderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16WultraSSLPinning09CryptoKitC8ProviderCACycfc",
+            "mangledName": "$s16WultraSSLPinning09CryptoKitC8ProviderCACycfc",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "ecdsaValidateSignatures",
+            "printedName": "ecdsaValidateSignatures(signedData:publicKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SignedData",
+                "printedName": "WultraSSLPinning.SignedData",
+                "usr": "s:16WultraSSLPinning10SignedDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ECPublicKey",
+                "printedName": "any WultraSSLPinning.ECPublicKey",
+                "usr": "s:16WultraSSLPinning11ECPublicKeyP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16WultraSSLPinning09CryptoKitC8ProviderC23ecdsaValidateSignatures10signedData9publicKeySbAA06SignedJ0V_AA08ECPublicL0_ptF",
+            "mangledName": "$s16WultraSSLPinning09CryptoKitC8ProviderC23ecdsaValidateSignatures10signedData9publicKeySbAA06SignedJ0V_AA08ECPublicL0_ptF",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hashSha256",
+            "printedName": "hashSha256(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16WultraSSLPinning09CryptoKitC8ProviderC10hashSha2564data10Foundation4DataVAH_tF",
+            "mangledName": "$s16WultraSSLPinning09CryptoKitC8ProviderC10hashSha2564data10Foundation4DataVAH_tF",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRandomData",
+            "printedName": "getRandomData(length:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16WultraSSLPinning09CryptoKitC8ProviderC13getRandomData6length10Foundation0H0VSi_tF",
+            "mangledName": "$s16WultraSSLPinning09CryptoKitC8ProviderC13getRandomData6length10Foundation0H0VSi_tF",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "importECPublicKey",
+            "printedName": "importECPublicKey(publicKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any WultraSSLPinning.ECPublicKey)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ECPublicKey",
+                    "printedName": "any WultraSSLPinning.ECPublicKey",
+                    "usr": "s:16WultraSSLPinning11ECPublicKeyP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16WultraSSLPinning09CryptoKitC8ProviderC17importECPublicKey06publicH0AA0gH0_pSg10Foundation4DataV_tF",
+            "mangledName": "$s16WultraSSLPinning09CryptoKitC8ProviderC17importECPublicKey06publicH0AA0gH0_pSg10Foundation4DataV_tF",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16WultraSSLPinning09CryptoKitC8ProviderC",
+        "mangledName": "$s16WultraSSLPinning09CryptoKitC8ProviderC",
+        "moduleName": "WultraSSLPinning",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CryptoProvider",
+            "printedName": "CryptoProvider",
+            "usr": "s:16WultraSSLPinning14CryptoProviderP",
+            "mangledName": "$s16WultraSSLPinning14CryptoProviderP"
           }
         ]
       },
@@ -1552,6 +1707,316 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "WultraSSLPinning"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeychainSecureDataStore",
+        "printedName": "KeychainSecureDataStore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accessGroup",
+            "printedName": "accessGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC11accessGroupSSSgvp",
+            "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC11accessGroupSSSgvp",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC11accessGroupSSSgvg",
+                "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC11accessGroupSSSgvg",
+                "moduleName": "WultraSSLPinning",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultKeychainIdentifier",
+            "printedName": "defaultKeychainIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC07defaultC10IdentifierSSvpZ",
+            "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC07defaultC10IdentifierSSvpZ",
+            "moduleName": "WultraSSLPinning",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC07defaultC10IdentifierSSvgZ",
+                "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC07defaultC10IdentifierSSvgZ",
+                "moduleName": "WultraSSLPinning",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(keychainIdentifier:accessGroup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainSecureDataStore",
+                "printedName": "WultraSSLPinning.KeychainSecureDataStore",
+                "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC18keychainIdentifier11accessGroupACSS_SSSgtcfc",
+            "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC18keychainIdentifier11accessGroupACSS_SSSgtcfc",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "save",
+            "printedName": "save(data:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC4save4data6forKeySb10Foundation0E0V_SStF",
+            "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC4save4data6forKeySb10Foundation0E0V_SStF",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadData",
+            "printedName": "loadData(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC04loadE06forKey10Foundation0E0VSgSS_tF",
+            "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC04loadE06forKey10Foundation0E0VSgSS_tF",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeData",
+            "printedName": "removeData(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC06removeE06forKeyySS_tF",
+            "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC06removeE06forKeyySS_tF",
+            "moduleName": "WultraSSLPinning",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16WultraSSLPinning23KeychainSecureDataStoreC",
+        "mangledName": "$s16WultraSSLPinning23KeychainSecureDataStoreC",
+        "moduleName": "WultraSSLPinning",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SecureDataStore",
+            "printedName": "SecureDataStore",
+            "usr": "s:16WultraSSLPinning15SecureDataStoreP",
+            "mangledName": "$s16WultraSSLPinning15SecureDataStoreP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WultraSSLPinning",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CertStore",
         "printedName": "CertStore",
@@ -1577,12 +2042,14 @@
                 "kind": "TypeNominal",
                 "name": "CryptoProvider",
                 "printedName": "any WultraSSLPinning.CryptoProvider",
+                "hasDefaultArg": true,
                 "usr": "s:16WultraSSLPinning14CryptoProviderP"
               },
               {
                 "kind": "TypeNominal",
                 "name": "SecureDataStore",
                 "printedName": "any WultraSSLPinning.SecureDataStore",
+                "hasDefaultArg": true,
                 "usr": "s:16WultraSSLPinning15SecureDataStoreP"
               }
             ],
@@ -1723,7 +2190,9 @@
             "usr": "s:16WultraSSLPinning9CertStoreC30powerAuthSslValidationStrategySo05Powerf6ClientghI0_pyF",
             "mangledName": "$s16WultraSSLPinning9CertStoreC30powerAuthSslValidationStrategySo05Powerf6ClientghI0_pyF",
             "moduleName": "WultraSSLPinning",
+            "deprecated": true,
             "declAttributes": [
+              "Available",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -1752,8 +2221,10 @@
             "mangledName": "$s16WultraSSLPinning9CertStoreC09powerAuthcD013configurationAcA0cD13ConfigurationV_tFZ",
             "moduleName": "WultraSSLPinning",
             "static": true,
+            "deprecated": true,
             "declAttributes": [
               "Final",
+              "Available",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -3729,8 +4200,6 @@
         "usr": "s:16WultraSSLPinning11ECPublicKeyP",
         "mangledName": "$s16WultraSSLPinning11ECPublicKeyP",
         "moduleName": "WultraSSLPinning",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -3937,8 +4406,10 @@
         "usr": "s:16WultraSSLPinning23PowerAuthCryptoProviderC",
         "mangledName": "$s16WultraSSLPinning23PowerAuthCryptoProviderC",
         "moduleName": "WultraSSLPinning",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -3983,6 +4454,39 @@
         "moduleName": "WultraSSLPinning",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PublicKey",
+        "printedName": "PublicKey",
+        "declKind": "Struct",
+        "usr": "s:9CryptoKit4P256O7SigningO9PublicKeyV",
+        "mangledName": "$s9CryptoKit4P256O7SigningO9PublicKeyV",
+        "moduleName": "CryptoKit",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ECPublicKey",
+            "printedName": "ECPublicKey",
+            "usr": "s:16WultraSSLPinning11ECPublicKeyP",
+            "mangledName": "$s16WultraSSLPinning11ECPublicKeyP"
+          }
         ]
       },
       {
@@ -4096,231 +4600,231 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 2221,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 2261,
       "length": 8,
       "value": "\"Accept\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 2448,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 2905,
       "length": 32,
       "value": "\"Invalid HTTPURLResponse object\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "Dictionary",
       "offset": 2958,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 3150,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 3157,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 3199,
       "length": 62,
       "value": "\"RestAPI: HTTP request failed with status code: \""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 3260,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 3502,
       "length": 51,
       "value": "\"RestAPI: HTTP request failed with error: \""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 3552,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/RestAPI.swift",
       "kind": "StringLiteral",
       "offset": 3865,
       "length": 53,
       "value": "\"RestAPI: HTTP request finished with empty response.\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 3,
       "value": "\"n\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
       "kind": "StringLiteral",
       "offset": 1226,
       "length": 3,
       "value": "\"f\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CertificateInfo.swift",
       "kind": "StringLiteral",
       "offset": 1253,
       "length": 3,
       "value": "\"e\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Plugins\/PowerAuth\/PowerAuthSecureDataStore.swift",
-      "kind": "StringLiteral",
-      "offset": 1092,
-      "length": 28,
-      "value": "\"com.wultra.WultraCertStore\""
-    },
-    {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4233,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4415,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4417,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4420,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4423,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4476,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4479,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4482,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStoreConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4485,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStore.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/KeychainSecureDataStore.swift",
+      "kind": "StringLiteral",
+      "offset": 1465,
+      "length": 28,
+      "value": "\"com.wultra.WultraCertStore\""
+    },
+    {
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 3438,
+      "offset": 3592,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStore.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/CertStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 3482,
+      "offset": 3636,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1106,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1192,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1288,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Service\/WultraDebug.swift",
       "kind": "IntegerLiteral",
       "offset": 1372,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CachedData.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CachedData.swift",
       "kind": "StringLiteral",
       "offset": 1073,
       "length": 3,
       "value": "\"c\""
     },
     {
-      "filePath": "\/Users\/tomas\/Developer\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CachedData.swift",
+      "filePath": "\/Users\/stepanvotava\/Projects\/ssl-pinning-ios\/Sources\/WultraSSLPinning\/Lib\/Model\/CachedData.swift",
       "kind": "StringLiteral",
       "offset": 1103,
       "length": 3,
